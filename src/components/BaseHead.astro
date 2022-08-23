@@ -1,7 +1,5 @@
 ---
-// Import the global.css file here so that it is included on
-// all pages through the use of the <BaseHead /> component.
-import '../styles/global.css';
+import '../global.css';
 
 export interface Props {
 	title: string;
@@ -41,5 +39,8 @@ const { title, description, image = '/placeholder-social.jpg' } = Astro.props;
 <meta name="twitter:creator" content="@cassidoo" />
 <meta name="twitter:image" content="http://cassidoo.co/img/headshot.png" />
 
-
+<link
+	href="https://fonts.googleapis.com/css?family=Roboto+Mono"
+	rel="stylesheet"
+/>
 
