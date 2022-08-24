@@ -28,7 +28,7 @@ body {
   word-wrap: break-word;
   overflow-wrap: break-word;
   line-height: 1.8;
-  color: #444;
+  color: var(--black);
 }
 h1,
 h2,
@@ -38,7 +38,7 @@ h5,
 h6,
 strong,
 b {
-  color: #222;
+  color: var(--black);
 }
 a {
   color: var(--pink);
@@ -82,8 +82,8 @@ pre > code {
   all: unset;
 }
 blockquote {
-  border: 1px solid #999;
-  color: #222;
+  border: 1px solid var(--gray);
+  color: var(--black);
   padding: 2px 0px 2px 20px;
   margin: 0px;
   font-style: italic;
@@ -113,4 +113,10 @@ h3 {
 
 .header-frame {
   max-width: 350px;
+}
+
+ul li time {
+  flex: 0 0 130px;
+  font-style: italic;
+  color: var(--gray);
 }
