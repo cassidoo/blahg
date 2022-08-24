@@ -14,7 +14,7 @@ So, I’ve helped as a peer mentor, as an impromptu tutor, as a friend, and just
 
 As both an asker and a helper, I’ve discovered the best techniques for asking for help, that will actually get you help.
 
-##First: Actually try something.
+## First: Actually try something.
 
 People who you’re asking will be giving you help, not a solution.
 The first thing someone will probably ask you is “What have you tried?”
@@ -22,7 +22,7 @@ If your answer amounts to “not a lot”, they have a perfect excuse to flat ou
 If you try something, then you show that you’re at least moderately familiar with your problem, that you know what won’t work, and it’ll give the helper a guide for how they could explain something to you.
 If you’re totally lost on what to try, search for your problem online to get some familiarity.
 
-##Narrow down your problem.
+## Narrow down your problem.
 
 If you know that just one part of the problem is your issue (because you tried something), make sure you tell your helper (this sounds like I’m talking about some sort of designated buddy system... anyway...) what that small part is.
 Now, don’t show them something so small that they can’t help you at all, but give them something fairly small to work with.
@@ -30,7 +30,7 @@ If it’s a coding problem, chances are they won’t want to go through 10,000 l
 If it’s a math problem, they probably don’t need to see ALL of your steps getting to where you’re at. Et cetera.
 I mean sure, be able to describe the larger context of your problem, but then focus on your problem area when you’re asking for help.
 
-##Don’t be a lazy recipient.
+## Don’t be a lazy recipient.
 
 When someone is helping you, they’re donating their time and effort into making sure you understand something.
 Don’t sit there on your phone while they look at your screen or read your paper.
