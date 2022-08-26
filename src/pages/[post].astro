@@ -1,0 +1,14 @@
+---
+
+// Credit to @rachsmithcodes for this function
+export async function getStaticPaths() {
+  let posts = await Astro.glob(`./posts/*.md`);
+  return posts.map((post) => ({
+    params: { slug: post.frontmatter.slug },
+    props: { post: post },
+  }));
+}
+
+---
+
+hey
