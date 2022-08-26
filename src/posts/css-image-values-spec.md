@@ -1,5 +1,5 @@
 ---
-layout: "../../layouts/BlogPost.astro"
+layout: "../layouts/BlogPost.astro"
 title: "The CSS Image Values Spec"
 slug: css-image-values
 description: "The CSS Image Values Spec allows you to cleanly blow up pixel art on the web."

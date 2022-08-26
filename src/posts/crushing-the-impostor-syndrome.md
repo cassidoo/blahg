@@ -1,5 +1,5 @@
 ---
-layout: "../../layouts/BlogPost.astro"
+layout: "../layouts/BlogPost.astro"
 title: "Crushing the Impostor Syndrome"
 slug: impostor-syndrome
 description: "Sometimes you don't feel like you're good enough, and that you're fooling everyone.  You're not alone."

@@ -1,5 +1,5 @@
 ---
-layout: "../../layouts/BlogPost.astro"
+layout: "../layouts/BlogPost.astro"
 title: "My Talk at TEDxDesMoines"
 slug: tedx-talk
 description: "I talked at TEDxDesMoines, come here what I had to say!  If you want to, of course."

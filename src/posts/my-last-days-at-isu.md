@@ -1,5 +1,5 @@
 ---
-layout: "../../layouts/BlogPost.astro"
+layout: "../layouts/BlogPost.astro"
 title: "My last days at ISU"
 slug: bye-isu
 description: "I'm leaving Iowa State in a few weeks, which is both a bummer and very exciting."

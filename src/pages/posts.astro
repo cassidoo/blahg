@@ -7,7 +7,7 @@ import Post from '../components/Post.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../config';
 
 // Use Astro.glob() to fetch all posts, and then sort them by date.
-const posts = (await Astro.glob('./post/*.{md,mdx}')).sort(
+const posts = (await Astro.glob('../posts/*.{md,mdx}')).sort(
 	(a, b) => new Date(b.frontmatter.added).valueOf() - new Date(a.frontmatter.added).valueOf()
 );
 ---
@@ -33,21 +33,6 @@ const posts = (await Astro.glob('./post/*.{md,mdx}')).sort(
 		<Header />
 		<main>
 			<content>
-				<ul>
-					{posts.map((post) => (
-						<li>
-							<time datetime={post.frontmatter.added}>
-								{new Date(post.frontmatter.added).toLocaleDateString('en-us', {
-									year: 'numeric',
-									month: 'short',
-									day: 'numeric',
-								})}
-							</time>
-							<a href={post.url}>{post.frontmatter.title}</a>
-						</li>
-					))}
-				</ul>
-
 				<ul>
           {posts.map(
           ({url, frontmatter: { description, slug, title, tags, added: date }}) => (

@@ -1,5 +1,5 @@
 ---
-layout: "../../layouts/BlogPost.astro"
+layout: "../layouts/BlogPost.astro"
 title: "Subconscious Learning"
 slug: subconscious-learning
 description: "I've been learning about... learning lately, specifically subconscious learning. Here's what I've found!"

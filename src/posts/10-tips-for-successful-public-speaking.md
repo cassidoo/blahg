@@ -1,5 +1,5 @@
 ---
-layout: "../../layouts/BlogPost.astro"
+layout: "../layouts/BlogPost.astro"
 title: "10 Tips for Successful Public Speaking"
 slug: public-speaking
 description: "Public speaking is the number 1 fear out there. Let's conquer it together. Lovingly."

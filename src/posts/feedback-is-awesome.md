@@ -1,5 +1,5 @@
 ---
-layout: "../../layouts/BlogPost.astro"
+layout: "../layouts/BlogPost.astro"
 title: "Feedback is awesome"
 slug: feedback-is-awesome
 description: "I love getting feedback from people.  You learn most from it."

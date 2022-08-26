@@ -1,5 +1,5 @@
 ---
-layout: "../../layouts/BlogPost.astro"
+layout: "../layouts/BlogPost.astro"
 title: "Messing with Sketch Club"
 slug: trying-sketch-club
 description: "I got the app Sketch Club and have really enjoyed making some fun drawings!"

@@ -1,5 +1,5 @@
 ---
-layout: "../../layouts/BlogPost.astro"
+layout: "../layouts/BlogPost.astro"
 title: "L4 Digital: First Impressions"
 slug: l4-digital-first-week
 description: "This week was my first week at L4 Digital!"

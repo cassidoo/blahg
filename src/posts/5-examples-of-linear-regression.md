@@ -1,5 +1,5 @@
 ---
-layout: "../../layouts/BlogPost.astro"
+layout: "../layouts/BlogPost.astro"
 title: "5 applications of linear regression that will drive him crazy"
 slug: linear-regression
 description: "Push these sexy applications in his mind to spice things up and drive him nuts."

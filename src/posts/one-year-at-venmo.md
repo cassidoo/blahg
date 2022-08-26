@@ -1,5 +1,5 @@
 ---
-layout: "../../layouts/BlogPost.astro"
+layout: "../layouts/BlogPost.astro"
 title: "One year at Venmo"
 slug: one-year-at-venmo
 description: "I've been at Venmo for a year!"

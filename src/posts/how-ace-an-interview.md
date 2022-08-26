@@ -1,5 +1,5 @@
 ---
-layout: "../../layouts/BlogPost.astro"
+layout: "../layouts/BlogPost.astro"
 title: "How to Ace an Interview"
 slug: ace-interview
 description: "Interviews are scary, but they don't have to be.  When you're on the spot, it's best to be prepared.  Let's prepare you."

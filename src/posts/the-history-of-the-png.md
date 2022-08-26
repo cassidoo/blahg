@@ -1,5 +1,5 @@
 ---
-layout: "../../layouts/BlogPost.astro"
+layout: "../layouts/BlogPost.astro"
 title: "A Brief History of the PNG"
 slug: png-history
 description: "The PNG file format has been around forever... sort of. Not really."

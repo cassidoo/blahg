@@ -1,5 +1,5 @@
 ---
-layout: "../../layouts/BlogPost.astro"
+layout: "../layouts/BlogPost.astro"
 title: "Hello, world"
 slug: hello-world
 description: "Lorem ipsum dolor sit amet"

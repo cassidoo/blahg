@@ -1,5 +1,5 @@
 ---
-layout: "../../layouts/BlogPost.astro"
+layout: "../layouts/BlogPost.astro"
 title: "Writing Practice: The Agua Caliente Airport"
 slug: agua-caliente
 description: "I did a writing exercise using a random Wikipedia page. And puns."

@@ -1,5 +1,5 @@
 ---
-layout: "../../layouts/BlogPost.astro"
+layout: "../layouts/BlogPost.astro"
 title: "How to ask for help"
 slug: ask-for-help
 description: "Some people don't know how to ask for help. Luckily, there's a proper way to do it."

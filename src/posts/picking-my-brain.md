@@ -1,5 +1,5 @@
 ---
-layout: "../../layouts/BlogPost.astro"
+layout: "../layouts/BlogPost.astro"
 title: "Picking your brain: Cold call email etiquette"
 slug: cold-call-email
 description: 'I get a LOT of emails from people asking to "pick my brain." Here is how I wish people would approach this.'

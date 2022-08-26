@@ -1,5 +1,5 @@
 ---
-layout: "../../layouts/BlogPost.astro"
+layout: "../layouts/BlogPost.astro"
 title: "A Weekend at BattleHack Boston"
 slug: battlehack-boston
 description: "I had my first hackathon experience as a Venmo employee this past weekend, and boy was it fun!"

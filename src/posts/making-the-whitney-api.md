@@ -1,5 +1,5 @@
 ---
-layout: "../../layouts/BlogPost.astro"
+layout: "../layouts/BlogPost.astro"
 title: "Making the Whitney Houston API"
 slug: whitney-houston-api
 description: "I made a Whitney Houston API. Because why not."

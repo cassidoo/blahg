@@ -1,5 +1,5 @@
 ---
-layout: "../../layouts/BlogPost.astro"
+layout: "../layouts/BlogPost.astro"
 title: "Finding a Mentor"
 slug: finding-a-mentor
 description: "Finding a mentor isn't always as explicit as it seems."

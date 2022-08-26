@@ -1,5 +1,5 @@
 ---
-layout: "../../layouts/BlogPost.astro"
+layout: "../layouts/BlogPost.astro"
 title: "Closures in JavaScript"
 slug: closures-in-js
 description: "Closures in JavaScript are an important concept that all JS devs should know. So here's a summary for you."

@@ -1,5 +1,5 @@
 ---
-layout: "../../layouts/BlogPost.astro"
+layout: "../layouts/BlogPost.astro"
 title: "Things you should have on your LinkedIn profile"
 slug: linkedin-profile
 description: "As much as I'd like to say that your looks will get you far, sometimes actual information is good to know too."

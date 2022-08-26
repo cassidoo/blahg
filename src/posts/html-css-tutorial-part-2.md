@@ -1,5 +1,5 @@
 ---
-layout: "../../layouts/BlogPost.astro"
+layout: "../layouts/BlogPost.astro"
 title: "HTML+CSS Tutorial, Part 2"
 slug: html-css-part-2
 description: "This is part 2 of a two-part tutorial for beginners as an introduction to HTML and CSS."

@@ -1,5 +1,5 @@
 ---
-layout: "../../layouts/BlogPost.astro"
+layout: "../layouts/BlogPost.astro"
 title: "Adding Keyboard Shortcuts to your React Apps"
 slug: keyboard-shortcuts-react
 description: "Using the Mousetrap library, you can add keyboard shortcuts to your React apps."

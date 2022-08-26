@@ -1,5 +1,5 @@
 ---
-layout: "../../layouts/BlogPost.astro"
+layout: "../layouts/BlogPost.astro"
 title: "Building My S60-X Keyboard"
 slug: s60x-keyboard
 description: "After a bunch of trial and error, I built and programmed my first mechanical keyboard!"

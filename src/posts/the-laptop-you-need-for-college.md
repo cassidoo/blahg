@@ -1,5 +1,5 @@
 ---
-layout: "../../layouts/BlogPost.astro"
+layout: "../layouts/BlogPost.astro"
 title: "The laptop you need for college"
 slug: college-laptop
 description: "Too often people go for the biggest and best laptop out there, when there are reasonable, affordable options.  Let's talk about it."

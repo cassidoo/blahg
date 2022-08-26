@@ -1,5 +1,5 @@
 ---
-layout: "../../layouts/BlogPost.astro"
+layout: "../layouts/BlogPost.astro"
 title: "Pure CSS3 Text Carousel"
 slug: css-text-carousel
 description: "I built a pure CSS text carousel because I couldn't find one I liked. Here's how I did it, and tweaks for later."
