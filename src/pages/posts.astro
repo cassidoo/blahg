@@ -3,6 +3,7 @@ import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import Post from '../components/Post.astro';
+import ColorScript from '../components/ColorScript.astro';
 
 import { SITE_TITLE, SITE_DESCRIPTION } from '../config';
 
@@ -42,5 +43,6 @@ const posts = (await Astro.glob('../posts/*.{md,mdx}')).sort(
 			</content>
 			<Footer />
 		</main>
+		<ColorScript />
 	</body>
 </html>

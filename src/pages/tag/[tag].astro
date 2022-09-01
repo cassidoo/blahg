@@ -6,22 +6,6 @@ import Post from '../../components/Post.astro';
 
 import { SITE_TITLE, SITE_DESCRIPTION } from '../../config';
 
-// @rachsmithcodes wrote this
-function postTags(posts) {
-  return posts.reduce((allTags, post) => {
-    const postTags = post.frontmatter.tags;
-    if (postTags) {
-      postTags.forEach((tag) => {
-        if (!allTags[tag]) {
-          allTags[tag] = [];
-        }
-        allTags[tag].push(post);
-      });
-    }
-    return allTags;
-  }, {});
-}
-
 // Credit to @rachsmithcodes for helping out my lil ol brain
 export async function getStaticPaths() {
   let posts = await Astro.glob(`../../posts/*.md`);
@@ -38,8 +22,6 @@ export async function getStaticPaths() {
     return allTags;
   }, {});
 
-  console.log(tags)
-
   return Object.keys(tags).map((t) => {
     return ({
       params: { tag: t },
@@ -49,6 +31,7 @@ export async function getStaticPaths() {
 }
 
 const { tag } = Astro.props;
+const { tag: currentTag } = Astro.params;
 
 ---
 
@@ -73,6 +56,7 @@ const { tag } = Astro.props;
 		<Header />
 		<main>
 			<content>
+        <h3>Posts tagged with "{currentTag}"</h3>
 				<ul>
           {tag.map(
           ({url, frontmatter: { description, slug, title, tags, added: date }}) => (
