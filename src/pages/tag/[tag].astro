@@ -1,0 +1,86 @@
+---
+import BaseHead from '../../components/BaseHead.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import Post from '../../components/Post.astro';
+
+import { SITE_TITLE, SITE_DESCRIPTION } from '../../config';
+
+// @rachsmithcodes wrote this
+function postTags(posts) {
+  return posts.reduce((allTags, post) => {
+    const postTags = post.frontmatter.tags;
+    if (postTags) {
+      postTags.forEach((tag) => {
+        if (!allTags[tag]) {
+          allTags[tag] = [];
+        }
+        allTags[tag].push(post);
+      });
+    }
+    return allTags;
+  }, {});
+}
+
+// Credit to @rachsmithcodes for helping out my lil ol brain
+export async function getStaticPaths() {
+  let posts = await Astro.glob(`../../posts/*.md`);
+  const tags = posts.reduce((allTags, post) => {
+    const postTags = post.frontmatter.tags;
+    if (postTags) {
+      postTags.forEach((tag) => {
+        if (!allTags[tag]) {
+          allTags[tag] = [];
+        }
+        allTags[tag].push(post);
+      });
+    }
+    return allTags;
+  }, {});
+
+  console.log(tags)
+
+  return Object.keys(tags).map((t) => {
+    return ({
+      params: { tag: t },
+      props: { tag: tags[t] },
+    })
+  });
+}
+
+const { tag } = Astro.props;
+
+---
+
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+		<style>
+			ul {
+				list-style-type: none;
+				padding: unset;
+			}
+			ul li {
+				display: flex;
+			}
+			ul li a:visited {
+				color: #8e32dc;
+			}
+		</style>
+	</head>
+	<body>
+		<Header />
+		<main>
+			<content>
+				<ul>
+          {tag.map(
+          ({url, frontmatter: { description, slug, title, tags, added: date }}) => (
+          	<Post {url} {description} {date} {slug} {title} {tags} />
+          ))}
+        </ul>
+			</content>
+			<Footer />
+		</main>
+	</body>
+</html>
