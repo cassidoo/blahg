@@ -2,9 +2,31 @@
 import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import RandomPosts from '../components/RandomPosts.astro';
 import ColorScript from '../components/ColorScript.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../config';
-import {Content as About} from './about.md';
+import { Content as About } from './about.md';
+
+const posts = (await Astro.glob('../posts/*.{md,mdx}'));
+
+// Get tags from all posts
+const getTags = posts.map((post) => {
+	const postTags = post.frontmatter.tags;
+	let allTags = []
+
+	if (postTags.length > 0) {
+		postTags.forEach((tag) => {
+			if (allTags.indexOf(tag) === -1) {
+				allTags.push(tag);
+			}
+		});
+	}
+	return allTags;
+}).flat(1);
+// Make the tags unique
+let tags = [...new Set(getTags)];
+
+
 ---
 
 <!DOCTYPE html>
@@ -18,10 +40,14 @@ import {Content as About} from './about.md';
 			<About />
 
 			<h3>Here's a sampler of some posts</h3>
-			<p>hello blah blah blah</p>
+			<RandomPosts allPosts={posts} />
 
 			<h3>View posts by tag</h3>
-			<p>hello blah blah blah</p>
+			<p>
+				{tags && tags.map(tag => (
+					<><a class="tag-home" href={`/tag/${tag}`}>#{tag}</a>{` `}</>
+				))}
+			</p>
 		</main>
 		<Footer />
 		<ColorScript />
