@@ -18,15 +18,8 @@ const posts = (await Astro.glob('../posts/*.{md,mdx}')).sort(
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 		<style>
-			ul {
-				list-style-type: none;
-				padding: unset;
-			}
 			ul li {
 				display: flex;
-			}
-			ul li a:visited {
-				color: #8e32dc;
 			}
 		</style>
 	</head>
