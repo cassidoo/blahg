@@ -19,8 +19,8 @@
   background-color: var(--highlight);
   color: var(--black);
 }
+html,
 body {
-  font-family: 'Roboto Mono', monospace;
   margin: auto;
   padding: 20px;
   max-width: 65ch;
@@ -29,6 +29,11 @@ body {
   overflow-wrap: break-word;
   line-height: 1.8;
   color: var(--black);
+}
+html,
+body,
+button {
+  font-family: "Roboto Mono", monospace;
 }
 h1,
 h2,
@@ -40,6 +45,16 @@ strong,
 b {
   color: var(--black);
 }
+
+body.dark-mode,
+body.dark-mode button,
+body.dark-mode .go-home,
+button.dark-mode,
+button.dark-mode button {
+  background: var(--black);
+  color: var(--white);
+}
+
 a {
   color: var(--pink);
 }
@@ -52,6 +67,34 @@ nav a {
 }
 nav a:not(:last-child) {
   padding: 0 12px 0 0;
+}
+
+ul {
+  list-style-type: none;
+  padding: unset;
+}
+
+.post {
+  margin: 0 0 30px 0;
+}
+
+.post .title {
+  font-size: 1.3em;
+}
+
+.tag {
+  margin-right: 20px;
+  color: var(--gray);
+  font-size: 0.8rem;
+}
+.tag:hover {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.tag-home {
+  margin-right: 10px;
+  color: var(--gray);
 }
 
 textarea {
