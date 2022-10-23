@@ -3,7 +3,7 @@ layout: "../layouts/BlogPost.astro"
 title: "Saying goodbye to my crappy vision"
 slug: crappy-vision
 description: "My vision sucks... for now, with LASIK on the horizon!"
-added: "Jul 28 20122"
+added: "Jul 28 2022"
 tags: [personal]
 ---
 
