@@ -1,28 +1,28 @@
 <script is:inline>
-		let colors = ['#24d05a', '#eb4888', '#10a2f5', '#e9bc3f'];
+	let colors = ["#24d05a", "#eb4888", "#10a2f5", "#e9bc3f"];
 
-		function getRandomColor() {
-			return colors[Math.floor(Math.random() * colors.length)];
-		}
+	function getRandomColor() {
+		return colors[Math.floor(Math.random() * colors.length)];
+	}
 
-		function setRandomLinkColor() {
-			Array.from(document.getElementsByTagName('a')).forEach((e) => {
-				e.style.color = getRandomColor();
-			});
-		}
+	function setRandomLinkColor() {
+		Array.from(document.getElementsByTagName("a")).forEach((e) => {
+			e.style.color = getRandomColor();
+		});
+	}
 
-		function setColorHoverListener() {
-			Array.from(document.querySelectorAll('a, button')).forEach((e) => {
-				e.addEventListener('mouseover', setRandomLinkColor);
-			});
-		}
+	function setColorHoverListener() {
+		Array.from(document.querySelectorAll("a, button")).forEach((e) => {
+			e.addEventListener("mouseover", setRandomLinkColor);
+		});
+	}
 
-		(function () {
+	(function () {
+		setRandomLinkColor();
+		setColorHoverListener();
+
+		setInterval(() => {
 			setRandomLinkColor();
-			setColorHoverListener();
-
-			setInterval(() => {
-				setRandomLinkColor();
-			}, 3000);
-		})();
+		}, 3000);
+	})();
 </script>

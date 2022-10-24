@@ -7,7 +7,6 @@ added: "Apr 24 2014"
 tags: [advice]
 ---
 
-
 Hey cutie. Your laugh makes my morning, and your smile makes my afternoon.
 
 So, I’ve helped as a peer mentor, as an impromptu tutor, as a friend, and just as an upperclassman with a lot of homework problems. From math to science to computing to whatever, you’ll often run into something that you just can’t figure out, and you need to ask for help.

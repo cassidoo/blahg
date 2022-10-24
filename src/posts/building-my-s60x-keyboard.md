@@ -4,7 +4,7 @@ title: "Building My S60-X Keyboard"
 slug: s60x-keyboard
 description: "After a bunch of trial and error, I built and programmed my first mechanical keyboard!"
 added: "Jan 01 2017"
-tags: [technical] 
+tags: [technical]
 ---
 
 HELLO. I'm so excited to share my build log of my first custom mechanical keyboard!
@@ -19,7 +19,7 @@ So, first I'll talk about building the board!
 
 First, the unboxing! Inside the box was Gateron Green switches (I wanted some
 that were both clicky and tactile), switch stabilizers, a PCB, a back plate,
-a front plate, LEDs, and feet.  There were also some blank keycaps (that I
+a front plate, LEDs, and feet. There were also some blank keycaps (that I
 didn't end up using, but were nice to have).
 
 ![pic](/assets/s60x/unboxing.gif)
@@ -90,7 +90,7 @@ to install things step-by-step:
     $ brew install dfu-programmer
     $ brew tap osx-cross/avr
     $ brew install avr-libc
-    $ git clone 
+    $ git clone
 ```
 
 Easy peasy. Now I went into the `qmk_firmware` folder, then into `keyboards`,

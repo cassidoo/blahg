@@ -4,7 +4,7 @@ title: "Writing Practice: The Agua Caliente Airport"
 slug: agua-caliente
 description: "I did a writing exercise using a random Wikipedia page. And puns."
 added: "Nov 02 2016"
-tags: [learning] 
+tags: [learning]
 ---
 
 As I go through my old notes on my computer I found this old writing exercise I

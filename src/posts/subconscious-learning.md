@@ -4,7 +4,7 @@ title: "Subconscious Learning"
 slug: subconscious-learning
 description: "I've been learning about... learning lately, specifically subconscious learning. Here's what I've found!"
 added: "Mar 16 2016"
-tags: [learning] 
+tags: [learning]
 ---
 
 One of the things I've done lately is try to passively learn Morse code. I added
@@ -30,7 +30,7 @@ which are released in response to stress. The switches are controlled by the
 [amygdala](http://en.wikipedia.org/wiki/Amygdala), the part of the brain that's
 responsible for both memory and emotional reactions. There's a really
 interesting study by Schwabe, Tegenthoff, and Hoffken that talks about this. You
-can read it [here](http://www.biologicalpsychiatryjournal.com/article/S0006-3223(13)00513-1/abstract).
+can read it [here](<http://www.biologicalpsychiatryjournal.com/article/S0006-3223(13)00513-1/abstract>).
 So, it turns out that when I said that I "operate well under stress" in college,
 I wasn't actually making that up!
 

@@ -4,7 +4,7 @@ title: "Crushing the Impostor Syndrome"
 slug: impostor-syndrome
 description: "Sometimes you don't feel like you're good enough, and that you're fooling everyone.  You're not alone."
 added: "Jul 23 2013"
-tags: [advice] 
+tags: [advice]
 ---
 
 I originally wrote this post on CycloneLife.com for Iowa State, and it went completely viral on the front page of Reddit, featured on 99u.com, and several other blogs and websites.

@@ -4,7 +4,7 @@ title: "Hello, world"
 slug: hello-world
 description: "Lorem ipsum dolor sit amet"
 added: "Aug 08 2022"
-tags: [meta, technical] 
+tags: [meta, technical]
 ---
 
 I decided to make my own little blog, but... more like the concept of a [digital garden](https://maggieappleton.com/garden-history). Sometimes I might update this a lot, sometimes I might not.

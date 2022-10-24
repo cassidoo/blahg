@@ -1,16 +1,20 @@
 ---
-import Post from '../components/Post.astro';
+import Post from "../components/Post.astro";
 
 const { allPosts } = Astro.props;
 
-let posts = allPosts.sort(() => 0.5 - Math.random()).slice(0, 3)
+let posts = allPosts.sort(() => 0.5 - Math.random()).slice(0, 3);
 ---
 
 <content>
-  <ul>
-    {posts.map(
-    ({url, frontmatter: { description, slug, title, tags, added: date }}) => (
-      <Post {url} {description} {date} {slug} {title} {tags} />
-    ))}
-  </ul>
+	<ul>
+		{
+			posts.map(
+				({
+					url,
+					frontmatter: { description, slug, title, tags, added: date },
+				}) => <Post {url} {description} {date} {slug} {title} {tags} />
+			)
+		}
+	</ul>
 </content>

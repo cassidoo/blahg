@@ -1,15 +1,17 @@
 ---
-import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
-import Post from '../components/Post.astro';
-import ColorScript from '../components/ColorScript.astro';
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import Post from "../components/Post.astro";
+import ColorScript from "../components/ColorScript.astro";
 
-import { SITE_TITLE, SITE_DESCRIPTION } from '../config';
+import { SITE_TITLE, SITE_DESCRIPTION } from "../config";
 
 // Use Astro.glob() to fetch all posts, and then sort them by date.
-const posts = (await Astro.glob('../posts/*.{md,mdx}')).sort(
-	(a, b) => new Date(b.frontmatter.added).valueOf() - new Date(a.frontmatter.added).valueOf()
+const posts = (await Astro.glob("../posts/*.{md,mdx}")).sort(
+	(a, b) =>
+		new Date(b.frontmatter.added).valueOf() -
+		new Date(a.frontmatter.added).valueOf()
 );
 ---
 
@@ -28,11 +30,15 @@ const posts = (await Astro.glob('../posts/*.{md,mdx}')).sort(
 		<main>
 			<content>
 				<ul>
-          {posts.map(
-          ({url, frontmatter: { description, slug, title, tags, added: date }}) => (
-          	<Post {url} {description} {date} {slug} {title} {tags} />
-          ))}
-        </ul>
+					{
+						posts.map(
+							({
+								url,
+								frontmatter: { description, slug, title, tags, added: date },
+							}) => <Post {url} {description} {date} {slug} {title} {tags} />
+						)
+					}
+				</ul>
 			</content>
 			<Footer />
 		</main>
