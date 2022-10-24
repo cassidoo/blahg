@@ -7,7 +7,7 @@ import ColorScript from "../components/ColorScript.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../config";
 import { Content as About } from "./about.md";
 
-const posts = await Astro.glob("../posts/*.{md,mdx}");
+const posts = await Astro.glob("../posts/*.md");
 
 // Get tags from all posts
 const getTags = posts
