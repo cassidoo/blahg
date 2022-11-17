@@ -2,7 +2,7 @@
 import BaseHead from "../components/BaseHead.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
-import RandomPosts from "../components/RandomPosts.astro";
+import HomePosts from "../components/HomePosts.astro";
 import ColorScript from "../components/ColorScript.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../config";
 import { Content as About } from "./about.md";
@@ -40,7 +40,7 @@ let tags = [...new Set(getTags)];
 			<About />
 
 			<h3>Here's a sampler of some posts</h3>
-			<RandomPosts allPosts={posts} />
+			<HomePosts allPosts={posts} />
 
 			<h3>View posts by tag</h3>
 			<p>
