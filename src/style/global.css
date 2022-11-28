@@ -23,11 +23,11 @@ html,
 body {
 	margin: auto;
 	padding: 20px;
-	max-width: 65ch;
+	max-width: 650px;
 	background-color: #fff;
 	word-wrap: break-word;
 	overflow-wrap: break-word;
-	line-height: 1.8;
+	line-height: 1.6;
 	color: var(--black);
 }
 html,
