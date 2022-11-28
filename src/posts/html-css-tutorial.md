@@ -159,6 +159,7 @@ So, anyway, the attribute 'href' tells us where the link is going to go when the
 Also, one thing you should note: Links don't have to be in `<p>` tags like I put above. You could put them in `<li>` tags in a list, `<h1>` tags for a linking header, or completely on their own!
 
 #### Adding links to other pages in your website
+
 Let's just say you have a fully functioning website called fakewebsite.com. You have your homepage and your "Contact Us" page in the same directory or folder.
 
 Normally when a beginner links to different pages on their website, they just make links that look like `<a href="http://www.fakewebsite.com/index.htmL">Home</a>` and `<a href="http://www.fakewebsite.com/contactus.htmL">Contact Us</a>`.
@@ -178,20 +179,22 @@ Now, if you were to change your domain or location of your files, you don't have
 So, you can reference the links that I showed you before if you want to check out some jazzy stuff you can do with your page. There are some other ones though that you might want to see before we move on to cooler and bigger things.
 
 #### Images
+
 `<img>`. Let's just say you want to put an image on your website. This is probably a good tag to know.  
 Add the following to page1.html:
 
-    <img src="http://i.imgur.com/B9q0A.gif" />
+    <img src="https://i.imgur.com/B9q0A.gif" />
 
 Open up the page in a browser. WHOA. Image! So, the `<img>` tag is one of those special tags. First of all, it doesn't have a closing tag. You just stick in a `/` at the end of the one tag and you're done. Secondly, it also has a `src` attribute (which is short for _source_), and in the value of that attribute you put the URL of the image (similar to `href` in the anchor tag).
 
 One attribute that might be good for you to remember for `<img>` tags is the `alt` attribute. If you changed the code above to:
 
-    <img src="http://i.imgur.com/B9q0A.gif" alt="I could have danced all night" />
+    <img src="https://i.imgur.com/B9q0A.gif" alt="I could have danced all night" />
 
 When you load the page in the browser, the image looks the same. But, if you roll your mouse over the image, you'll see some words appear! WOW. That's the `alt` attribute. It stands for the _alternate text_ for an image, and it's used when a user can't view the image for whatever reason (using a screen reader, slow connection, error in the `src` attribute, etc.). Or, in the case of [XKCD](http://xkcd.com/), it's used to add more humor to the page (roll your mouse over all of the comics on the site, they always add another joke or two that a lot of people don't know about).
 
 #### Line breaks
+
 Let's just say you want to keep all your content in one paragraph `<p>`, but you still want to break it up.
 
 That's easy.
@@ -204,6 +207,7 @@ So, there's two special tags here, `<hr>` and `<br>`. They are _empty tags_, mea
 Try inserting these in between some of your `<p>` tags to try it out!
 
 #### Tables
+
 Tables are really cool. They can also be a bit confusing. Open up tables.html (in the **2 - Tags** folder) in a browser to check out the example table I made for you there.
 
 There's several tags for tables, but the essential ones are `<table>`, `<tr>`, `<th>`, and `<td>`. Look at tables.html in your editor.
@@ -325,28 +329,28 @@ There are two options you can use, the `style` attribute and the `width` and `he
 
 Take this block of code here and stick it into style1.html:
 
-    <img src="http://i.imgur.com/wjiVXJe.gif" />
+    <img src="https://i.imgur.com/wjiVXJe.gif" />
 
 Now, let's just say you want the image to be an exact size, say, 600x800. All you need to do is add `width` and `height` attributes to do just that!
 
-    <img src="http://i.imgur.com/wjiVXJe.gif" width="600" height="800" />
+    <img src="https://i.imgur.com/wjiVXJe.gif" width="600" height="800" />
 
 Load that baby in a browser. Boo yah. But, you'll notice that the proportions of the image are a little off. What a pain. That's actually pretty easy to fix. Let's say that you absolutely have to have the width at 600 pixels, but the height can slide. It's as easy as taking out the `height` attribute.
 
-    <img src="http://i.imgur.com/wjiVXJe.gif" width="600" />
+    <img src="https://i.imgur.com/wjiVXJe.gif" width="600" />
 
 Refresh dat page. Huzzah. Same works for if you have a set height that you want, just include the `height` attribute and not the `width`.
 
 Now, you can also do these changes with the `style` attribute.
 
-    <img src="http://i.imgur.com/wjiVXJe.gif" style="width: 600px" />
+    <img src="https://i.imgur.com/wjiVXJe.gif" style="width: 600px" />
 
 Simple enough! Now, we've looked at the `style` attribute a bit now but I haven't explained the syntax. The `style` attribute is for _inline styles_. This means that you're styling your HTML directly in each element, rather than using CSS. But, we haven't gotten that far yet, so I won't go into that part.
 
 Now, the syntax within a `style` attribute is a little funky. It is always `style="property: value"`, where the _property_ is literally a property of the tag you're editing (for example, `color`, `width`, `height`), and the _value_ is to what you're changing or editing the property (for example `blue`, `600px`, `#FF0000`).
 If you have more than one property that you want to style, for example both height and width, you put a semicolon between delarations. So, in our example, if you want to edit both height and width of our image in the `style` attribute, we'd do:
 
-    <img src="http://i.imgur.com/wjiVXJe.gif" style="width: 600px; height: 800px" />
+    <img src="https://i.imgur.com/wjiVXJe.gif" style="width: 600px; height: 800px" />
 
 Why is the syntax this funky? Well, that's because it's secretly CSS syntax. But we'll get into that more later.
 
@@ -356,13 +360,13 @@ What if we have a paragraph IN A BOX. That's right. Kind of like a table. But no
 
 Let's take the same image we played with before:
 
-    <img src="http://i.imgur.com/wjiVXJe.gif" />
+    <img src="https://i.imgur.com/wjiVXJe.gif" />
 
 Now, you can add `border="5"` to this and you'll get a border with a thickness of 5 pixels around the image. But, this attribute is actually no longer supported for things other than tables (oh yeah, we used this for tables. Memories.), so we can do this a better way. You guessed it. `style` is coming to SAVE THE DAY.
 
 The styling for borders with the `style` attribute is a bit different than just adding `border="5"`, but it's also much more powerful. Let's change our code:
 
-    <img src="http://i.imgur.com/wjiVXJe.gif" style="border:5px solid black" />
+    <img src="https://i.imgur.com/wjiVXJe.gif" style="border:5px solid black" />
 
 Whoa. That's a lot of crap in there. Let's break it down.
 
@@ -374,10 +378,10 @@ Color? What? OH YEAH. That's the third part of the border style. You can stick i
 
 Let's mix it up a bit with different borders for you to check out. I'm just going to keep using the same image, you can replace it with whatever. Stick this in the `<body>` tags of style1.html and check it out, and play with the values yourself!
 
-    <img src="http://i.imgur.com/wjiVXJe.gif" style="border:5px dotted #ffcc00" />
-    <img src="http://i.imgur.com/wjiVXJe.gif" style="border:10px ridge rgb(77, 145, 99); width: 300px" />
-    <img src="http://i.imgur.com/wjiVXJe.gif" style="border:8px outset red" />
-    <img src="http://i.imgur.com/wjiVXJe.gif" style="border:3px double #333a21; height: 30px" />
+    <img src="https://i.imgur.com/wjiVXJe.gif" style="border:5px dotted #ffcc00" />
+    <img src="https://i.imgur.com/wjiVXJe.gif" style="border:10px ridge rgb(77, 145, 99); width: 300px" />
+    <img src="https://i.imgur.com/wjiVXJe.gif" style="border:8px outset red" />
+    <img src="https://i.imgur.com/wjiVXJe.gif" style="border:3px double #333a21; height: 30px" />
 
 Notice how I added `width` and `height` to a couple of them. We're getting incestuous with our stylings. Aww yeah.
 

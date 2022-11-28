@@ -26,7 +26,7 @@ But, back then, there was no `filter` property in CSS. It was a totally propriet
 The PNG was first specified in October of 1996, and became an official international standard in November of 2003. There was a [period of time though when it wasn't so popular](http://www.libpng.org/pub/png/slashpng-1999.html).
 Fast forward to now, and the PNG is the most used lossless image compression format on the internet. It was originally created to be a replacement of the GIF, but alas, you can't replace this:
 
-![pic](http://i.imgur.com/7GuGra2.gif)
+![pic](https://i.imgur.com/7GuGra2.gif)
 
 PNG was decided early on to be a single-image format. The developers of PNG tried to change that in 2001 (again, to compete with the GIF) by making the MNG (Multiple-image Network Graphics), but that never took off. Mozilla also tried by making the APNG (Animated Portable Network Graphics) in 2008, but that never really caught on, either.
 

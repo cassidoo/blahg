@@ -13,7 +13,7 @@ I wrote this to answer those questions.
 
 Finding a mentor isn't some magical moment where you meet and someone puts their hand on your head saying, "I will mentor you, my child."
 
-![pic](http://i.imgur.com/eucxwpW.gif)
+![pic](https://i.imgur.com/eucxwpW.gif)
 
 Finding a mentor is really just a matter of keeping communication lines open. Once you meet someone, continue talking and building a relationship with them. There's so many ways to do this. Go to a meetup, chat with people in forums or Facebook groups, have a coffee chat, video chat someone, email someone (as if they're your pen pal, not like a cover letter).
 
