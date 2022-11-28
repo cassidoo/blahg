@@ -3,7 +3,6 @@ import sitemap from "@astrojs/sitemap";
 
 // https://astro.build/config
 export default defineConfig({
-	site: "https://cassidoo.co",
-	base: "/blog",
+	site: "https://blahg.netlify.app/",
 	integrations: [sitemap()],
 });
