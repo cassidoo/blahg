@@ -69,6 +69,11 @@ nav a:not(:last-child) {
 	padding: 0 12px 0 0;
 }
 
+hr {
+	border-top: 1px solid #ddd;
+	margin: 1rem 0;
+}
+
 ul {
 	list-style-type: none;
 	padding: unset;
@@ -157,6 +162,11 @@ h3 {
 
 .header-frame {
 	max-width: 350px;
+}
+
+.article-title {
+	font-size: 2em;
+	margin: 0.25em 0 0;
 }
 
 ul li time {

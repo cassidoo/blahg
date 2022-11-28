@@ -17,14 +17,7 @@ const posts = (await Astro.glob("../posts/*.md")).sort(
 
 <!DOCTYPE html>
 <html lang="en-us">
-	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-		<style>
-			ul li {
-				display: flex;
-			}
-		</style>
-	</head>
+	<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 	<body>
 		<Header />
 		<main>
