@@ -2,7 +2,7 @@
 layout: "../layouts/BlogPost.astro"
 title: "Hello, world"
 slug: hello-world
-description: "Lorem ipsum dolor sit amet"
+description: "Lorem ipsum dolor sit amet (but for real)"
 added: "Aug 08 2022"
 tags: [meta, technical]
 ---
