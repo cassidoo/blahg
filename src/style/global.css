@@ -71,6 +71,7 @@ nav {
 	top: 0;
 	text-align: center;
 	background: rgba(255, 255, 255, 0.9);
+	backdrop-filter: blur(1px);
 }
 
 nav a {
