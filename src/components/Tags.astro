@@ -1,0 +1,18 @@
+---
+const { tags } = Astro.props;
+---
+
+<h3>View posts by tag</h3>
+<p>
+	{
+		tags &&
+			tags.map((tag) => (
+				<>
+					<a class="tag" href={`/tag/${tag}`}>
+						#{tag}
+					</a>
+					{` `}
+				</>
+			))
+	}
+</p>

@@ -43,7 +43,7 @@ const { tag: currentTag } = Astro.params;
 		<main>
 			<content>
 				<h3>Posts tagged with "{currentTag}"</h3>
-				<ul>
+				<ul class="tags-list">
 					{
 						tag.map(
 							({

@@ -75,8 +75,12 @@ hr {
 }
 
 ul {
-	list-style-type: none;
 	padding: unset;
+}
+
+.posts-list,
+.tags-list {
+	list-style-type: none;
 }
 
 .post {

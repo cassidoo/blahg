@@ -3,6 +3,11 @@ import BaseHead from "../components/BaseHead.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import ColorScript from "../components/ColorScript.astro";
+import Tags from "../components/Tags.astro";
+import getTags from "../scripts/getTags";
+
+const posts = await Astro.glob("../posts/*.md");
+const tags = getTags(posts);
 
 const {
 	content: { title, description, added, updatedDate, heroImage },
@@ -30,6 +35,7 @@ const {
 				<slot />
 			</article>
 		</main>
+		<Tags tags={tags} />
 		<Footer />
 		<ColorScript />
 	</body>
