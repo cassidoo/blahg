@@ -54,14 +54,25 @@ button.dark-mode button {
 	background: var(--black);
 	color: var(--white);
 }
+body.dark-mode nav {
+	background: rgba(0, 0, 0, 0.8);
+}
+
+header {
+	position: relative;
+}
 
 a {
 	color: var(--pink);
 }
 
 nav {
+	position: sticky;
+	top: 0;
 	text-align: center;
+	background: rgba(255, 255, 255, 0.8);
 }
+
 nav a {
 	margin: 25px 0;
 }
@@ -74,12 +85,9 @@ hr {
 	margin: 1rem 0;
 }
 
-ul {
+ul.posts-list,
+ul.tags-list {
 	padding: unset;
-}
-
-.posts-list,
-.tags-list {
 	list-style-type: none;
 }
 
