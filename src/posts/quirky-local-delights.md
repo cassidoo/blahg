@@ -7,7 +7,7 @@ added: "Feb 08 2023"
 tags: [personal]
 ---
 
-There's some things that you really only appreciate when you live in a place for a long amount of time, things that are sort of a... weird constant outside of your home.
+There's some things that you really only appreciate when you live in a place for a long amount of time, things that are sort of a... weird constant outside of your house.
 
 In my case, one of my favorite spots to grab lunch after church on Sundays is a no-frills deli called [Manny's](https://www.mannysdeli.com/). This place has been around for literally more than 50 years, and it's got great food that the neighborhood loves.
 
