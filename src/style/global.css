@@ -36,14 +36,17 @@ button {
 	font-family: "Roboto Mono", monospace;
 }
 h1,
+strong,
+b {
+	color: var(--black);
+}
+
 h2,
 h3,
 h4,
 h5,
-h6,
-strong,
-b {
-	color: var(--black);
+h6 {
+	color: var(--gray);
 }
 
 body.dark-mode,
@@ -56,7 +59,24 @@ button.dark-mode button {
 	color: var(--white);
 }
 body.dark-mode nav {
-	background: rgba(0, 0, 0, 0.9);
+	background: rgba(0, 0, 0, 0.7);
+}
+
+@media (prefers-color-scheme: dark) {
+	html,
+	body,
+	body button,
+	body h1,
+	body .go-home {
+		background: var(--black);
+		color: var(--white);
+	}
+	body nav {
+		background: rgba(0, 0, 0, 0.7);
+	}
+	body code {
+		background-color: #333;
+	}
 }
 
 header {
@@ -158,7 +178,6 @@ h1 {
 }
 
 h2 {
-	color: var(--gray);
 	font-weight: 300;
 	margin: 0 0 0.5em 0;
 }
