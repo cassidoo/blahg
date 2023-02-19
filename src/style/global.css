@@ -67,6 +67,7 @@ body.dark-mode nav {
 	body,
 	body button,
 	body h1,
+	body blockquote,
 	body .go-home {
 		background: var(--black);
 		color: var(--white);
