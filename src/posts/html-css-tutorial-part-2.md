@@ -4,7 +4,7 @@ title: "HTML+CSS Tutorial, Part 2"
 slug: html-css-part-2
 description: "This is part 2 of a two-part tutorial for beginners as an introduction to HTML and CSS."
 added: "Feb 10 2014"
-tags: [tutorial]
+tags: [technical, advice]
 ---
 
 ### What
@@ -199,6 +199,7 @@ Remember: You can only use an ID once. IDs are more helpful when you're controll
 Let's say that you want to separate individual text in your paragraphs or sections on your page. Let's introduce 2 new tags: `<span>` and `<div>`.
 
 ##### The `<span>` tag
+
 The `<span>` tag is pretty invisible unless you style it. It's used to group _inline-elements_ (so like a word in a paragraph), and it doesn't actually do anything unless you style or manipulate it with something else.
 
 So, let's say you have a paragraph and you really want to emphasize some text within a paragraph without a line break or anything. In comes `<span>`. For example:

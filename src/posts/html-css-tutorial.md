@@ -4,7 +4,7 @@ title: "HTML+CSS Tutorial, Part 1"
 slug: html-css-part-1
 description: "This is part 1 of a two-part tutorial for beginners as an introduction to HTML and CSS."
 added: "Feb 10 2014"
-tags: [tutorial]
+tags: [technical, advice]
 ---
 
 ### What
