@@ -33,6 +33,12 @@ export async function getStaticPaths() {
 
 const { tag } = Astro.props;
 const { tag: currentTag } = Astro.params;
+
+let sortedPosts = tag.sort(
+	(a, b) =>
+		new Date(b.frontmatter.added).valueOf() -
+		new Date(a.frontmatter.added).valueOf()
+);
 ---
 
 <!DOCTYPE html>
@@ -45,7 +51,7 @@ const { tag: currentTag } = Astro.params;
 				<h3>Posts tagged with "{currentTag}"</h3>
 				<ul class="tags-list">
 					{
-						tag.map(
+						sortedPosts.map(
 							({
 								url,
 								frontmatter: { description, slug, title, tags, added: date },
