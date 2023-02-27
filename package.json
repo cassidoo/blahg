@@ -1,5 +1,5 @@
 {
-	"name": "@example/blog",
+	"name": "@cassidoo/blahg",
 	"version": "0.0.1",
 	"private": true,
 	"scripts": {
@@ -10,11 +10,10 @@
 		"astro": "astro"
 	},
 	"devDependencies": {
-		"@astrojs/rss": "^1.2.1",
-		"@astrojs/sitemap": "^1.0.0",
-		"astro": "^1.6.11",
-		"esbuild": "^0.15.12",
-		"prettier": "^2.7.1",
-		"prettier-plugin-astro": "^0.6.0"
+		"@astrojs/rss": "^2.1.1",
+		"@astrojs/sitemap": "^1.1.0",
+		"astro": "^2.0.15",
+		"prettier": "^2.8.4",
+		"prettier-plugin-astro": "^0.8.0"
 	}
 }
