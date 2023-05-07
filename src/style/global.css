@@ -211,3 +211,9 @@ ul li time {
 	font-style: italic;
 	color: var(--gray);
 }
+
+@media (max-width: 600px) {
+	nav a:not(:last-child) {
+		padding: 0;
+	}
+}
