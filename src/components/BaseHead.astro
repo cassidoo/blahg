@@ -34,7 +34,7 @@ const { title, description, image = "/home-blog-card.png" } = Astro.props;
 	<meta property="twitter:title" content={title} />
 	<meta property="twitter:description" content={description} />
 	<meta name="twitter:creator" content="@cassidoo" />
-	<meta name="twitter:image" content="http://cassidoo.co/img/headshot.png" />
+	<meta name="twitter:image" content={new URL(image, Astro.url)} />
 
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
