@@ -32,7 +32,8 @@ body {
 }
 html,
 body,
-button {
+button,
+code {
 	font-family: "Roboto Mono", monospace;
 }
 h1,
@@ -161,6 +162,7 @@ img {
 code {
 	padding: 2px 5px;
 	background-color: #f2f2f2;
+	font-weight: bold;
 }
 pre {
 	padding: 1rem;
