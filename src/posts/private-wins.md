@@ -4,7 +4,7 @@ title: "The small, private wins"
 slug: private-wins
 description: "Sometimes I can't really share what I work on, and I just gotta deal with that and be happy!"
 added: "Jan 26 2023"
-tags: [personal]
+tags: [personal, musings]
 ---
 
 There's a bunch of random projects and skills that I work on where I'm hyped to make progress on them, but because it's pre-launch or private (or just not useful/understandable for other people to know), I don't really get to talk about how cool it is.

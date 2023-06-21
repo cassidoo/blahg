@@ -4,7 +4,7 @@ title: "Feedback is awesome"
 slug: feedback-is-awesome
 description: "I love getting feedback from people.  You learn most from it."
 added: "Feb 22 2014"
-tags: [advice]
+tags: [advice, musings]
 ---
 
 Today was a great day full of feedback from people.

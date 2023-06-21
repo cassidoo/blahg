@@ -4,7 +4,7 @@ title: "Memorize quotes"
 slug: memorize-quotes
 description: "Memorizing quotes is probably one of my favorite easy 'life hacks'."
 added: "Mar 27 2023"
-tags: [advice, personal]
+tags: [advice, musings]
 ---
 
 When I was young, my parents gave me a poster I put on my wall of a bunch of different inspirational quotes from various people. Every morning as I got dressed, I'd have the quotes up in my face, and slowly but surely I started memorizing them and internalizing them. There were inspirational ones like:

@@ -4,7 +4,7 @@ title: "Turning todos into tadas"
 slug: todo-tada
 description: "Learning to focus on what I did do, rather than what I didn't."
 added: "May 20 2023"
-tags: [advice, personal]
+tags: [advice, personal, musings]
 ---
 
 Having a baby really has changed my brain more than I ever expected it to. I related a ton to Rach Smith's [post about the inevitable mental breakdown you get in early motherhood](https://rachsmith.com/the-inevitable-menty-b/), in that... everyone tells you how magical motherhood is, and how it's the most important job in the world, and they all congratulate you on how exciting it is. And then, and then, and then: the baby gets here, and your life is no longer your own (at least it feels that way), and any semblance of control you _thought_ you had over where things would go are out the window entirely.

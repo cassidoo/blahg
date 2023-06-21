@@ -4,7 +4,7 @@ title: "My language brain is... broken?"
 slug: broken-language-brain
 description: "I think in one language when I hear another, and... I have no idea why."
 added: "Nov 29 2022"
-tags: [personal, learning]
+tags: [personal, learning, musings]
 ---
 
 I visited my in-laws in South Korea recently, and it was really awesome being able to see them. I don't speak Korean, but I've picked up enough words here and there to be able to somewhat understand the high-level topic of conversation, and nodded suuuper enthusiastically if they smiled at me.

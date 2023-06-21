@@ -4,7 +4,7 @@ title: "Loving and hating the streak"
 slug: the-streak
 description: "I have a love/hate relationship with my GitHub streak."
 added: "Jan 27 2023"
-tags: [work, personal]
+tags: [work, personal, musings]
 ---
 
 My GitHub streak right now is like, really good. Today marks 1 full month: I haven't missed a day of committing since December 27th! Whew! Watch out world! She's a woman in STEM! She's a girl who codes! Live, laugh, love!
