@@ -6,7 +6,7 @@ Hello, welcome. This is a blog, or digital garden, or whatever. It's built with 
 
 ## See the blahg
 
-[blog.cassidoo.co](blog.cassidoo.co)
+[blog.cassidoo.co](https://blog.cassidoo.co)
 
 ## Run it yourself
 
