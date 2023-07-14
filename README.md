@@ -4,6 +4,10 @@
 
 Hello, welcome. This is a blog, or digital garden, or whatever. It's built with Astro!
 
+## See the blahg
+
+[blog.cassidoo.co](https://blog.cassidoo.co)
+
 ## Run it yourself
 
 All commands are run from the root of the project, from a terminal:
