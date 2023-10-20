@@ -5,9 +5,9 @@ export default function getTags(posts) {
 			const postTags = post.frontmatter.tags;
 			let allTags = [];
 
-			if (postTags.length > 0) {
+			if (postTags?.length > 0) {
 				postTags.forEach((tag) => {
-					if (allTags.indexOf(tag) === -1) {
+					if (allTags?.indexOf(tag) === -1) {
 						allTags.push(tag);
 					}
 				});
