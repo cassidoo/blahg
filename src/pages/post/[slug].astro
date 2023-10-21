@@ -13,6 +13,15 @@ export async function getStaticPaths() {
 
 const { post } = Astro.props;
 
+post.frontmatter.added = new Date(post.frontmatter.added).toLocaleDateString(
+	"en-us",
+	{
+		year: "numeric",
+		month: "short",
+		day: "numeric",
+	}
+);
+
 const {
 	Content,
 	frontmatter: { title, added, updated, tags, excerpt },
