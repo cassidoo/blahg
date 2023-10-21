@@ -1,10 +1,14 @@
 ---
-layout: "../layouts/BlogPost.astro"
-title: "Crushing the Impostor Syndrome"
+layout: ../layouts/BlogPost.astro
+title: Crushing the Impostor Syndrome
 slug: impostor-syndrome
-description: "Sometimes you don't feel like you're good enough, and that you're fooling everyone.  You're not alone."
-added: "Jul 23 2013"
-tags: [advice, musings]
+description: >-
+  Sometimes you don't feel like you're good enough, and that you're fooling
+  everyone.  You're not alone.
+tags:
+  - advice
+  - musings
+added: 2013-07-23T05:00:00.000Z
 ---
 
 I originally wrote this post on CycloneLife.com for Iowa State, and it went completely viral on the front page of Reddit, featured on 99u.com, and several other blogs and websites.
@@ -45,7 +49,7 @@ One day a couple of months ago at my internship, I wrote this fairly simple appl
 
 I came to a realization that can be explained by the following. I assumed that everyone around me was a super genius programmer, because they seemed like it. But in fact, everything I knew was not in their repertoire. I could teach them as they were teaching me. What?!?
 
-![impostor diagram]({{ site.url }}/assets/impostorsyndrome.jpg)
+![Impostor diagram](/assets/impostorsyndrome.jpg)
 
 So, how do you destroy the Impostor Syndrome? Here’s a few tips.
 
