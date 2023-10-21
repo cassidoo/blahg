@@ -5,8 +5,8 @@ const branch = process.env.HEAD || "main";
 
 export default defineConfig({
 	branch,
-	clientId: null, // Get this from tina.io
-	token: null, // Get this from tina.io
+	clientId: process.env.TINACLIENTID, // Get this from tina.io
+	token: process.env.TINATOKEN, // Get this from tina.io
 
 	build: {
 		outputFolder: "admin",
@@ -36,6 +36,7 @@ export default defineConfig({
 						label: "Layout",
 						type: "string",
 						required: true,
+						searchable: false,
 					},
 					{
 						name: "title",
@@ -78,5 +79,13 @@ export default defineConfig({
 				],
 			},
 		],
+	},
+	search: {
+		tina: {
+			indexerToken: process.env.TINASEARCH,
+			stopwordLanguages: ["eng"],
+		},
+		indexBatchSize: 50,
+		maxSearchIndexFieldLength: 100,
 	},
 });
