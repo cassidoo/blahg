@@ -3,9 +3,9 @@
 	"version": "0.0.1",
 	"private": true,
 	"scripts": {
-		"dev": "astro dev",
+		"dev": "npx tinacms dev -c 'astro dev'",
 		"start": "astro dev",
-		"build": "astro build",
+		"build": "tinacms build && astro build",
 		"preview": "astro preview",
 		"astro": "astro"
 	},
