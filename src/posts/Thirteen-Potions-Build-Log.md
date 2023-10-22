@@ -94,7 +94,7 @@ I loved the tilemap I got from [Kenney](https://www.kenney.nl/) because it had e
 
 I'd never used [Aseprite](https://www.aseprite.org/) before, but it was luckily pretty straightforward to copy and paste and slightly edit the knight into a little spritesheet!
 
-![Knight spritesheet](knights.png)
+![Knight spritesheet](/assets/knights.png)
 
 I really liked how easy Phaser made it to add the knight to the screen. I just had to:
 
