@@ -30,7 +30,7 @@ I also used [Aseprite](https://www.aseprite.org/) for editing pixel art, which I
 
 To make the map, I used the [Tiled](https://www.mapeditor.org/) map editor.
 
-The rest of the app is built with just JavaScript on a single `index.html` page. The code is \~\~probably\~\~ definitely not as cute as it could be, but I was just trying to make it work, so I didn't do any sort of optimizations.
+The rest of the app is built with just JavaScript on a single `index.html` page. The code is **definitely** not as cute as it could be, but I was just trying to make it work, so I didn't do any sort of optimizations.
 
 ## Setting up the game
 
