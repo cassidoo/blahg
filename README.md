@@ -2,7 +2,7 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/eab04209-5f7f-41ed-a8dd-c45a9ebb1834/deploy-status)](https://app.netlify.com/sites/blahg/deploys)
 
-Hello, welcome. This is a blog, or digital garden, or whatever. It's built with Astro!
+Hello, welcome. This is a blog, or digital garden, or whatever. It's built with Astro, and uses TinaCMS to edit the content!
 
 ## See the blahg
 
@@ -20,3 +20,11 @@ All commands are run from the root of the project, from a terminal:
 | `npm run preview`      | Preview your build locally, before deploying     |
 | `npm run astro ...`    | Run CLI commands like `astro add`, `astro check` |
 | `npm run astro --help` | Get help using the Astro CLI                     |
+
+You go to `localhost:3000/admin/index.html` to see the CMS and use it. If you want to clone this for yourself, you'll need a `.env.development` file that has the following in it:
+
+```
+TINACLIENTID=<from tina.io>
+TINATOKEN=<from tina.io>
+TINASEARCH=<from tina.io>
+```
