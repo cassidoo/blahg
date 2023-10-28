@@ -14,7 +14,7 @@ Whenever you want to render a list of something in React, you need to add a `key
 2. **Keys should not be random IDs** - if an ID is a random number generated during a render, then your items will have all new keys every time the state in your component changes. That being said, if you generate unique IDs when creating the data, that's different and okay.
 3. **Keys should probably not be just the item's `index`** - if you plan on changing the order of your list, or adding or deleting items, then the indices will change whenever the list changes, and that will throw React off.
 
-Here's a good example of a `key` being set properly, using an `id` in the list::
+Here's a good example of a `key` being set properly, using an `id` in the list:
 
 ```jsx
 const CityList = () => {
