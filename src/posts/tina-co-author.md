@@ -15,10 +15,10 @@ BUT after doing some poking in the TinaCMS Discord group about it, that's not an
 
 You can now go to your [TinaCMS settings](https://app.tina.io/account/settings) to add yourself!
 
-![](/assets/tinacmscoauthor.png)
+![Tina settings page where you set co-author information](/assets/tinacmscoauthor.png)
 
 You'll need to add your GitHub username, but for your email, if you want to keep that private, you need to get that from GitHub. [Go to your email settings](https://github.com/settings/emails), and then scroll to the "Keep my email addresses private" to find the email address that GitHub made for you to keep your personal email private.
 
-![](/assets/primaryemailcoauthor.png)
+![GitHub's email settings page](/assets/primaryemailcoauthor.png)
 
 And now, HA, this post was written by me AND committed by me, using TinaCMS. Woo hoo!
