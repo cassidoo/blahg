@@ -6,8 +6,10 @@
 :root {
 	--white: #efefef;
 	--transwhite: rgba(239, 239, 239, 0.7);
+	--moretranswhite: rgba(239, 239, 239, 0.1);
 	--black: #252525;
 	--transblack: rgba(37, 37, 37, 0.7);
+	--moretransblack: rgba(37, 37, 37, 0.1);
 	--gray: #a4a4a4;
 	--highlight: #e5ffc3;
 	--red: #e4002b;
@@ -66,6 +68,10 @@ body.dark-mode nav {
 }
 
 @media (prefers-color-scheme: dark) {
+	::selection {
+		background-color: #0f0f0f;
+		color: var(--white);
+	}
 	html,
 	body,
 	body button,
@@ -82,7 +88,7 @@ body.dark-mode nav {
 		background: var(--transblack);
 	}
 	body code {
-		background-color: #333;
+		background-color: var(--moretranswhite);
 	}
 	body a {
 		color: var(--white);
@@ -118,7 +124,7 @@ nav a:not(:last-child) {
 }
 
 hr {
-	border-top: 1px solid #ddd;
+	border-top: 1px solid var(--gray);
 	margin: 1rem 0;
 }
 
@@ -166,7 +172,7 @@ img {
 }
 code {
 	padding: 2px 5px;
-	background-color: #f2f2f2;
+	background-color: var(--moretransblack);
 	font-weight: bold;
 }
 pre {
