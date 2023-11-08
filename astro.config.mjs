@@ -6,4 +6,10 @@ export default defineConfig({
 	site: "https://blog.cassidoo.co/",
 	base: "/",
 	integrations: [sitemap()],
+	markdown: {
+		shikiConfig: {
+			theme: "material-theme-darker",
+			langs: [],
+		},
+	},
 });
