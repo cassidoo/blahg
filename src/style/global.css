@@ -87,6 +87,9 @@ body.dark-mode nav {
 	body a {
 		color: var(--white);
 	}
+	body .tag {
+		color: var(--gray);
+	}
 }
 
 header {
