@@ -23,18 +23,17 @@ html,
 body {
 	margin: auto;
 	padding: 20px;
-	max-width: 650px;
+	max-width: 65ch;
 	background-color: #fff;
 	word-wrap: break-word;
 	overflow-wrap: break-word;
-	line-height: 1.6;
 	color: var(--black);
 }
 html,
 body,
 button,
 code {
-	font-family: "Roboto Mono", monospace;
+	font-family: "iA Writer Mono", monospace;
 }
 h1,
 strong,
@@ -48,6 +47,7 @@ h4,
 h5,
 h6 {
 	color: var(--gray);
+	line-height: 1.1;
 }
 
 body.dark-mode,
@@ -180,12 +180,10 @@ blockquote {
 
 h1 {
 	font-weight: 400;
-	margin: 0;
 }
 
 h2 {
-	font-weight: 300;
-	margin: 0 0 0.5em 0;
+	font-weight: 400;
 }
 
 h3 {
@@ -203,15 +201,30 @@ h3 {
 	max-width: 350px;
 }
 
+article :not(.article-title) {
+	line-height: 1.8;
+}
+
 .article-title {
 	font-size: 2em;
 	margin: 0.25em 0 0;
 }
 
-ul li time {
-	flex: 0 0 130px;
+.blog-post {
+	font-size: clamp(1rem, 0.96rem + 0.22vw, 1.125rem);
+}
+
+.blog-post > * + * {
+	margin-block-start: 1em;
+}
+
+time {
 	font-style: italic;
 	color: var(--gray);
+}
+
+ul li time {
+	flex: 0 0 130px;
 }
 
 @media (max-width: 600px) {
