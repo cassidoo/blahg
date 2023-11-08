@@ -136,17 +136,12 @@ ul.tags-list {
 .tag {
 	display: inline-block;
 	margin-right: 20px;
-	color: var(--gray);
+	color: var(--black);
 	font-size: 0.8rem;
 }
 .tag:hover {
 	cursor: pointer;
 	font-weight: bold;
-}
-
-.tag-home {
-	margin-right: 10px;
-	color: var(--gray);
 }
 
 textarea {
