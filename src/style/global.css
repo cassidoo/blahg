@@ -10,7 +10,7 @@
 	--black: #252525;
 	--transblack: rgba(37, 37, 37, 0.7);
 	--moretransblack: rgba(37, 37, 37, 0.1);
-	--gray: #a4a4a4;
+	--gray: #6b6b6b;
 	--highlight: #e5ffc3;
 	--red: #e4002b;
 	--green: #24d05a;
@@ -45,15 +45,6 @@ b {
 	color: var(--black);
 }
 
-h2,
-h3,
-h4,
-h5,
-h6 {
-	color: var(--gray);
-	line-height: 1.1;
-}
-
 body.dark-mode,
 body.dark-mode button,
 body.dark-mode h1,
@@ -71,6 +62,9 @@ body.dark-mode nav {
 	::selection {
 		background-color: #0f0f0f;
 		color: var(--white);
+	}
+	:root {
+		--gray: #a4a4a4;
 	}
 	html,
 	body,
@@ -96,6 +90,15 @@ body.dark-mode nav {
 	body .tag {
 		color: var(--gray);
 	}
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: var(--gray);
+	line-height: 1.1;
 }
 
 header {
