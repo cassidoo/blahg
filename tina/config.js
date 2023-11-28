@@ -30,6 +30,14 @@ export default defineConfig({
 					added: new Date(),
 					tags: [],
 				}),
+				ui: {
+					filename: {
+						readonly: false,
+						slugify: (values) => {
+							return values?.slug?.toLowerCase().replace(/ /g, "-");
+						},
+					},
+				},
 				fields: [
 					{
 						name: "layout",

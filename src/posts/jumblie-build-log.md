@@ -2,7 +2,7 @@
 layout: ../layouts/BlogPost.astro
 title: Jumblie Build Log
 slug: jumblie-build-log
-description: 'I built Jumblie, a jumbled word search game. Here''s how!'
+description: "I built Jumblie, a jumbled word search game. Here's how!"
 tags:
   - learning
   - technical
@@ -25,10 +25,10 @@ I came to Brainstory saying "sooo I want to make a game" and slowly but surely i
 
 I knew I wanted to:
 
-* Make a daily puzzle that changes each day
-* Have 4, 5, 6, and 7 letter words, jumbled together
-* Make it play kind of like the [New York Times Connections](https://www.nytimes.com/games/connections) game
-* Have it be mobile and desktop friendly
+- Make a daily puzzle that changes each day
+- Have 4, 5, 6, and 7 letter words, jumbled together
+- Make it play kind of like the [New York Times Connections](https://www.nytimes.com/games/connections) game
+- Have it be mobile and desktop friendly
 
 ## What I did next
 
@@ -83,7 +83,7 @@ The output was very simple:
 	["fast", "point", "wooden", "general"],
 	["heal", "wound", "forest", "wrestle"],
 	// ...
-]
+];
 ```
 
 But as you can imagine, when I made my first prototype of the game, it was... impossible to win.
@@ -124,9 +124,9 @@ I talked to my coworker Kevin (thanks Kevin) who gave me some tips on messing wi
 
 ```json
 {
-	lengths: [4, 5, 6, 7], 
-	words: ["pear", "apple", "banana", "cherries"], 
-	theme: "Fruits", 
+	lengths: [4, 5, 6, 7],
+	words: ["pear", "apple", "banana", "cherries"],
+	theme: "Fruits",
 	isValid: false
  },
 ```
@@ -161,10 +161,10 @@ Anyway! Jumblie was about as basic as it could get at first, where it would take
 
 After this, it... just worked. I added a scoring setup so that based on the word you guessed, it would be assigned to a color, and you could copy the score just like with games like Wordle and Connections:
 
-> Jumblie #12\
+> Jumblie #12
 >
 > 🟠🔴🔵🟢
-> \
+>
 > 5 guesses
 
 I went from this to adding features like keyboard support (which was painful, because events when you click buttons versus when you type are treated differently in the browser), a shuffling option (which was also painful, because I had to refactor how letters were differentiated on the screen), handling duplicate guesses (which was again painful because when you don't use a framework, you gotta do some really funky imperative programming where you select the div, select the word in the div, compare it with the current guess, etc), and a timer (which was actually not that painful, phew).
@@ -175,9 +175,9 @@ But, I still needed a leaderboard! I... ran out of time to build a real one agai
 
 I set up local storage to:
 
-* Save your best times while playing
-* Save your longest streak while playing the game
-* Save your current streak
+- Save your best times while playing
+- Save your longest streak while playing the game
+- Save your current streak
 
 You know what's fun? Time zones. My word, time zones. A very common ask from folks was asking for pausing functionality and autosaving if you exit the game, and my word, setting up time zones with this scoring and the personal leaderboards made me lose far too much sleep and happiness. But, once I finally, finally fixed all of them (she said, foolishly), the personal leaderboard setup was complete!
 
@@ -187,9 +187,9 @@ Since "finalizing" the game, I've been so happy with how much people play it! I 
 
 I've since added features like:
 
-* Ability to add the game to your home screen
-* [A puzzle archive](https://jumblie.com/archive/)
-* [A way for users to suggest new puzzles](https://jumblie.com/suggest/) (because I am NOT going to deal with AI again for that)
+- Ability to add the game to your home screen
+- [A puzzle archive](https://jumblie.com/archive/)
+- [A way for users to suggest new puzzles](https://jumblie.com/suggest/) (because I am NOT going to deal with AI again for that)
 
 I've gotten some other requests for things like internationalization (which would take a fairly large refactor I admit), actual shared leaderboards with friends, and a mobile app! I'm thinking about how I'll implement those, but until then, I'm super happy where Jumblie is at right now.
 
