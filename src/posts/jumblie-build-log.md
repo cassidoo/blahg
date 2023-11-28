@@ -90,7 +90,7 @@ But as you can imagine, when I made my first prototype of the game, it was... im
 
 ![First Jumblie version](/assets/jumbliev1.png)
 
-It was just too hard! I had my braintrust (a.k.a. my cousin group chat) play it and one of my poor cousins had 81 guesses with no success. Noah if you're reading this I'm still so sorry.
+It was just too hard! I had my braintrust (a.k.a. my cousin group chat) play it and one of my poor cousins had 81 guesses with no success. Noah, if you're reading this, I'm still so sorry.
 
 Back to the drawing board, I had to come up with a way to make this game significantly easier. My sister had recommended I come up with a theme for each of the groups of words, which meant I had to do some sorting.
 
@@ -161,8 +161,10 @@ Anyway! Jumblie was about as basic as it could get at first, where it would take
 
 After this, it... just worked. I added a scoring setup so that based on the word you guessed, it would be assigned to a color, and you could copy the score just like with games like Wordle and Connections:
 
-> Jumblie #12
+> Jumblie #12\
+>
 > 🟠🔴🔵🟢
+> \
 > 5 guesses
 
 I went from this to adding features like keyboard support (which was painful, because events when you click buttons versus when you type are treated differently in the browser), a shuffling option (which was also painful, because I had to refactor how letters were differentiated on the screen), handling duplicate guesses (which was again painful because when you don't use a framework, you gotta do some really funky imperative programming where you select the div, select the word in the div, compare it with the current guess, etc), and a timer (which was actually not that painful, phew).
