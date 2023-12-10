@@ -31,6 +31,7 @@ export default defineConfig({
 					tags: [],
 				}),
 				ui: {
+					dateFormat: "MMM DD YYYY",
 					filename: {
 						readonly: false,
 						slugify: (values) => {

@@ -5,7 +5,7 @@ slug: line-break-md
 description: Here's how you can add single line breaks in your markdown documents!
 tags:
   - technical
-added: 2023-12-10T06:49:17.431Z
+added: 2023-12-10T06:00:00.000Z
 ---
 
 Sometimes when you write markdown, you'll write some paragraph...
@@ -41,7 +41,7 @@ Like this...\
 ...and then this.
 ```
 
-This is supported in *most* markdown processors, but not all of them. Definitely check on the one you're using before you push to prod. Some processors also allow you to add a double space at the end of a line as well (truly just `  `, hit your spacebar twice), but since a lot of code editor setups trim empty spaces, I personally prefer the backslash way.
+This is supported in _most_ markdown processors, but not all of them. Definitely check on the one you're using before you push to prod. Some processors also allow you to add a double space at the end of a line as well (truly just `  `, hit your spacebar twice), but since a lot of code editor setups trim empty spaces, I personally prefer the backslash way.
 
 Have\
 fun!

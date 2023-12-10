@@ -6,7 +6,7 @@ description: I've got some gift suggestions for the nerds in your life!
 tags:
   - personal
   - advice
-added: 2023-12-10T05:53:49.063Z
+added: 2023-12-09T06:00:00.000Z
 ---
 
 I've bookmarked various things over the past year or so of things I would get for friends, family, and myself, and I thought I'd share 'em with ya after seeing [Chris Coyier's very cool guide](https://chriscoyier.net/2023/12/06/gift-guide-2023/)! Nobody's paying me to share these, I just think these are fun.
