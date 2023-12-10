@@ -116,4 +116,4 @@ A friend of mine introduced me to this game a couple months ago and I bought it 
 
 ## Goodbye
 
-I don't know how people usually end gift guides so... _aggressively finger guns while backing away_
+I don't know how people usually end gift guides so... _aggressively points finger guns while backing away_

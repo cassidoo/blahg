@@ -27,7 +27,7 @@ html,
 body {
 	margin: auto;
 	padding: 20px;
-	max-width: 65ch;
+	max-width: 70ch;
 	background-color: var(--white);
 	word-wrap: break-word;
 	overflow-wrap: break-word;
