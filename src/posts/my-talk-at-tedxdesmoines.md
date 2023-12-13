@@ -2,9 +2,9 @@
 layout: "../layouts/BlogPost.astro"
 title: "My Talk at TEDxDesMoines"
 slug: tedx-talk
-description: "I talked at TEDxDesMoines, come here what I had to say!  If you want to, of course."
+description: "I spoke at TEDxDesMoines, come hear what I had to say!"
 added: "Feb 22 2014"
-tags: [advice]
+tags: [advice, events]
 ---
 
 <iframe width="560" height="315" src="//www.youtube.com/embed/7O0z06YRKHg" frameborder="0" allowfullscreen></iframe>
@@ -34,7 +34,7 @@ And, you know I like feedback! I'm so happy about some of the comments and discu
 >
 > - Rane Johnson-Stempson
 
-> "Wonderful speech and thank you for being such an inspiration for young women everywhere! I can only hope that the doors you are working to open are there for my daughter when she gets older. Keep up the great work and keep inspiring everyone! <3﻿"
+> "Wonderful speech and thank you for being such an inspiration for young women everywhere! I can only hope that the doors you are working to open are there for my daughter when she gets older. Keep up the great work and keep inspiring everyone! <3"
 >
 > - Dee Sunday
 
