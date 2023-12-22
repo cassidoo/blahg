@@ -1,3 +1,3 @@
-export const SITE_TITLE = "Cassidy Williams";
+export const SITE_TITLE = "Cassidy's blog";
 export const SITE_DESCRIPTION =
-	"Cassidy Williams, Software Engineer and Developer Advocate in Chicago.";
+	"I'm Cassidy Williams, a software engineer, mom, and overall nerd in Chicago. I write about tech, projects, and whatever else I'm thinking about!";
