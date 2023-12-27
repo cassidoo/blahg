@@ -10,7 +10,7 @@ const posts = await Astro.glob("../posts/*.md");
 const tags = getTags(posts);
 
 const {
-	content: { title, description, added, updatedDate, heroImage },
+	content: { title, description, added, updated, heroImage },
 } = Astro.props;
 ---
 
@@ -25,9 +25,9 @@ const {
 				<h1 class="article-title">{title}</h1>
 				{added && <time>{added}</time>}
 				{
-					updatedDate && (
+					updated && (
 						<div>
-							Last updated on <time>{updatedDate}</time>
+							Last updated on <time>{updated}</time>
 						</div>
 					)
 				}

@@ -3,16 +3,15 @@ import Post from "../components/Post.astro";
 
 const { allPosts } = Astro.props;
 
-// TODO: account for recently updated posts, too
+//.sort(() => 0.5 - Math.random()).slice(0, 3);
+
 let posts = allPosts
 	.sort(
 		(a, b) =>
-			new Date(b.frontmatter.added).valueOf() -
-			new Date(a.frontmatter.added).valueOf()
+			new Date(b.frontmatter.updated || b.frontmatter.added).valueOf() -
+			new Date(a.frontmatter.updated || a.frontmatter.added).valueOf()
 	)
 	.slice(0, 5);
-
-//.sort(() => 0.5 - Math.random()).slice(0, 3);
 ---
 
 <content>
