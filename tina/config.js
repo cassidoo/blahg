@@ -80,6 +80,13 @@ export default defineConfig({
 						required: true,
 					},
 					{
+						label: "Updated",
+						name: "updated",
+						type: "datetime",
+						dateFormat: "MMM DD YYYY",
+						required: true,
+					},
+					{
 						type: "rich-text",
 						name: "body",
 						label: "Body",
