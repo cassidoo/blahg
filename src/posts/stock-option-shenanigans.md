@@ -22,3 +22,7 @@ In case you don't want to watch, at a high level, here's what I talk about that 
 7. **Preferred vs Common Shares**: Typically, employees get common shares and investors get preferred shares. Preferred shares are advantageous during liquidation, as preferred shareholders get their money first. [More on that here](https://learn.angellist.com/articles/preferred-shares-vs-common-shares).
 
 Overall, the main thing you need to remember is that investing in startups is always a risk. Companies can fail (and often do, [especially in this economy](https://carta.com/blog/deal-terms-q3-2023/#deals-drying-up)), and when they do, your investment fails with them. But, if a startup succeeds... the returns can be significant! Your equity in a company is a lottery ticket - you may not win, but if you do, the rewards can be huuuge!
+
+If you'd like more information beyond this, I highly recommend [this blog post by Julia Evans](https://jvns.ca/blog/2015/12/30/do-the-math-on-your-stock-options/).
+
+Until next time!
