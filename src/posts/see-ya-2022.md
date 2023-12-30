@@ -4,7 +4,7 @@ title: "See ya, 2022"
 slug: see-ya-2022
 description: "2022 is over, taking a lil look back on how it was."
 added: "Dec 31 2022"
-tags: [learning, work, personal]
+tags: [learning, work, personal, musings]
 ---
 
 Man, 2022 was a year of **extreme** highs and lows, probably the most extreme I've had... ever.
@@ -27,7 +27,7 @@ In the summer, my friend Lilly (who is the CEO of a startup [Contenda](https://c
 
 ## Personal things!
 
-So many things happened, gosh, so many things! My sister got married, I travelled internationally for the first time since March 2020, I saw family, I saw friends, I got LASIK, my cousin got engaged... I loved being with people I care about this year. I also experienced a close family loss, which was deeply devastating, but it brought our family together to mourn with each other.
+So many things happened, gosh, so many things! My sister got married, I traveled internationally for the first time since March 2020, I saw family, I saw friends, I got LASIK, my cousin got engaged... I loved being with people I care about this year. I also experienced a close family loss, which was deeply devastating, but it brought our family together to mourn with each other.
 
 I also... got pregnant!! This has been probably the most grueling physical experience I've ever had (so far). I'm due in the Spring, and I have been shaking my fist at the state of research in women's health pretty dang regularly. But, my husband and I are thrilled (and so is the family), and she'll be a very loved baby!
 
