@@ -21,7 +21,7 @@ They actually didn't support "out of vault" files before (which I admit I didn't
 
 Okay so the way this works is you go to **Settings > Community plugins** and then search + install **Obsidian Markdown Export**. From there in the plugin settings, you have to put in an **absolute** path for your external repository, and a **relative** path for your media assets.
 
-![](../../public/assets/markdown-export-settings.png)
+![My markdown export settings](/assets/markdown-export-settings.png)
 
 So in my case, I put `/Users/cassidoo/GitHub/blahg/src/posts` for the markdown file to end up in my blog repo, and `../../public/assets` to put images in the folder relative to the outputted file.
 
