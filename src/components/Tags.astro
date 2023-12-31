@@ -1,9 +1,9 @@
 ---
-const { tags } = Astro.props;
+const { tags, all } = Astro.props;
 ---
 
-<h3>View posts by tag</h3>
-<p>
+{all && <h3>View posts by tag</h3>}
+<div>
 	{
 		tags &&
 			tags.map((tag) => (
@@ -15,4 +15,4 @@ const { tags } = Astro.props;
 				</>
 			))
 	}
-</p>
+</div>

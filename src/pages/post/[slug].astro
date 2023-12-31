@@ -12,33 +12,8 @@ export async function getStaticPaths() {
 }
 
 const { post } = Astro.props;
-
-post.frontmatter.added = new Date(post.frontmatter.added).toLocaleDateString(
-	"en-us",
-	{
-		year: "numeric",
-		month: "short",
-		day: "numeric",
-	}
-);
-
-if (post.frontmatter.updated === "Invalid Date") {
-	post.frontmatter.updated = null;
-} else {
-	post.frontmatter.updated = new Date(post.frontmatter.updated).toLocaleDateString(
-		"en-us",
-		{
-			year: "numeric",
-			month: "short",
-			day: "numeric",
-		}
-	);
-}
-
-const {
-	Content,
-	frontmatter: { title, added, updated, tags, excerpt },
-} = post;
+const { Content } = post;
 ---
 
 <Content />
+

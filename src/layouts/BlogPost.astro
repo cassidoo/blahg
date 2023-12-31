@@ -7,11 +7,31 @@ import Tags from "../components/Tags.astro";
 import getTags from "../scripts/getTags";
 
 const posts = await Astro.glob("../posts/*.md");
-const tags = getTags(posts);
+const allTags = getTags(posts);
 
-const {
-	content: { title, description, added, updated, heroImage },
+let {
+	content: { title, description, added, updated, tags, heroImage },
 } = Astro.props;
+
+added = new Date(added).toLocaleDateString(
+	"en-us",
+	{
+		year: "numeric",
+		month: "short",
+		day: "numeric",
+	}
+);
+
+if (updated) {
+	updated = new Date(updated).toLocaleDateString(
+		"en-us",
+		{
+			year: "numeric",
+			month: "short",
+			day: "numeric",
+		}
+	);
+}
 ---
 
 <html lang="en-us">
@@ -28,13 +48,14 @@ const {
 					:
 					<span>{added && <time>{added}</time>}</span>
 				}
+				<Tags tags={tags} />
 				<hr />
 				<div class="blog-post">
 					<slot />
 				</div>
 			</article>
 		</main>
-		<Tags tags={tags} />
+		<Tags tags={allTags} all />
 		<Footer />
 		<ColorScript />
 	</body>

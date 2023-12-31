@@ -22,10 +22,13 @@ const tags = getTags(posts);
 		<main>
 			<About />
 
+			<br />
+
 			<h3>Here's my most recent posts</h3>
+
 			<HomePosts allPosts={posts} />
 
-			<Tags tags={tags} />
+			<Tags tags={tags} all />
 		</main>
 		<Footer />
 		<ColorScript />
