@@ -22,6 +22,19 @@ post.frontmatter.added = new Date(post.frontmatter.added).toLocaleDateString(
 	}
 );
 
+if (post.frontmatter.updated === "Invalid Date") {
+	post.frontmatter.updated = null;
+} else {
+	post.frontmatter.updated = new Date(post.frontmatter.updated).toLocaleDateString(
+		"en-us",
+		{
+			year: "numeric",
+			month: "short",
+			day: "numeric",
+		}
+	);
+}
+
 const {
 	Content,
 	frontmatter: { title, added, updated, tags, excerpt },

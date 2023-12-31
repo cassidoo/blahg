@@ -116,6 +116,7 @@ nav {
 	top: 0;
 	text-align: center;
 	background: var(--transwhite);
+	-webkit-backdrop-filter: blur(1px);
 	backdrop-filter: blur(1px);
 }
 

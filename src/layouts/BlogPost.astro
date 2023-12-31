@@ -14,7 +14,7 @@ const {
 } = Astro.props;
 ---
 
-<html>
+<html lang="en-us">
 	<BaseHead title={title} description={description} />
 
 	<body>
@@ -23,13 +23,10 @@ const {
 			<article>
 				{heroImage && <img width={720} height={360} src={heroImage} alt="" />}
 				<h1 class="article-title">{title}</h1>
-				{added && <time>{added}</time>}
-				{
-					updated && (
-						<div>
-							Last updated on <time>{updated}</time>
-						</div>
-					)
+				{updated ?
+					<span><time>{added}</time>, last updated on <time>{updated}</time></span>
+					:
+					<span>{added && <time>{added}</time>}</span>
 				}
 				<hr />
 				<div class="blog-post">
