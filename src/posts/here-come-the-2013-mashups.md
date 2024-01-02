@@ -6,7 +6,6 @@ description: Here's some of my favorite mashup music of the year!
 tags:
   - personal
 added: 2013-12-30T06:00:00.000Z
-updated: 2013-12-31T06:00:00.000Z
 ---
 
 Hey friends!
