@@ -1,21 +1,22 @@
 ---
-layout: "../layouts/BlogPost.astro"
-title: "Things you should have on your LinkedIn profile"
-slug: linkedin-profile
-description: "As much as I'd like to say that your looks will get you far, sometimes actual information is good to know too."
-added: "Feb 27 2014"
-tags: [advice]
+layout: ../layouts/BlogPost.astro
+title: Things you should have on your LinkedIn profile
+slug: linkedin-profile-things
+description: People should know what you're about!
+tags:
+  - advice
+added: 2013-11-26T06:00:00.000Z
 ---
 
 Hello friends!
 
-Now I know what you're thinking. "I'm attractive, and that'll get me a job. Why do I need a LinkedIn?"
+Now I know what you're thinking. "I'm attractive, and that'll get me a job after college. Why do I need a LinkedIn?"
 
 Well, the harsh reality is, the world thinks you're beautiful, but that's the least interesting thing about you. It wants to see your work ethic, your personality, and your LinkedIn profile.
 
 So let's give the world what it wants.
 
-Firstly, you'll want your professional name on there. No nicknames. As much as I want to put my common name (Cassie "The Rock" Danger Girl) on there, I know that Cassidy will have to do, and it will have to for you too. Only if your name isn't Cassidy you should probably put your own name on there.
+Firstly, you'll want your professional name on there. No nicknames. As much as I want to put my common name (Cassie "The Rock" Danger Girl) on there, I know that Cassidy will have to do, and it will have to for you too.
 
 Secondly, you'll want a professional photo. I know that selfie of you with 50 grapes in your mouth is impressive, but typically companies don't put that in job descriptions. So, get someone to take a photo of you where you're looking sharp!
 
@@ -29,4 +30,4 @@ And finally, show your stuff! Post your projects, classwork, test scores, patent
 
 Your LinkedIn profile is your public facing profile to employers all over the country. Help them help you find a job, internship, co-op, or work study!
 
-Talk to you soon, my lovelies <3
+Talk to you soon, my lovelies \<3

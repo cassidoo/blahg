@@ -36,7 +36,7 @@ Suddenly, I hear a voice behind me.
 There he was. Exactly as I remembered. Older, perhaps, but just as
 confident-looking, with smile lines around his eyes.
 
-"Of course I'm here,” I replied, "I've been waiting for you."
+"Of course I'm here," I replied, "I've been waiting for you."
 
 "You have to stop waiting for me. You know why I left." He opened the door and
 ushered me toward it, but I refused.

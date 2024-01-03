@@ -11,11 +11,11 @@ tags: [advice, events]
 
 Hello friends!
 
-So, I don’t know if a lot of you have ever watched a TED talk before, but they usually have some interesting food for thought.
+So, I don't know if a lot of you have ever watched a TED talk before, but they usually have some interesting food for thought.
 
-WELL, I gave a talk at TEDxDesMoines last December, and I thought I’d share it with you all!
+WELL, I gave a talk at TEDxDesMoines last December, and I thought I'd share it with you all!
 
-It’s just about my growing up as a woman in STEM (Science, Tech, Engineering, Math), and about following your passions.
+It's just about my growing up as a woman in STEM (Science, Tech, Engineering, Math), and about following your passions.
 
 I hope it gives you some inspiration to go after what you want.
 

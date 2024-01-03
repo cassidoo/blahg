@@ -103,7 +103,7 @@ HTML, short for _HyperText Markup Language_, consists of these things called tag
 For example, `<html>` is one tag and the closing tag for it is `</html>`, same with `<head>` and `</head>` and `<body>` and `</body>`, and so on. You get it.
 The opening and closing tags together are an _element_ (which also includes everything written in it). For example, `<title>My Website</title>` is one element. The text inside an element, in the title case, `My Website`, is called the _content_ of an element.
 
-Tags organize your page and tell the browser what your page consists of. There's tons of tags out there, some that you may never use.  
+Tags organize your page and tell the browser what your page consists of. There's tons of tags out there, some that you may never use.
 Here's some lists of tags if you really care to see all of them at this point:
 
 - [HTML Dog Tag List](http://www.htmldog.com/reference/htmltags/)
@@ -180,7 +180,7 @@ So, you can reference the links that I showed you before if you want to check ou
 
 #### Images
 
-`<img>`. Let's just say you want to put an image on your website. This is probably a good tag to know.  
+`<img>`. Let's just say you want to put an image on your website. This is probably a good tag to know.
 Add the following to page1.html:
 
     <img src="https://i.imgur.com/B9q0A.gif" />
@@ -373,7 +373,7 @@ Whoa. That's a lot of crap in there. Let's break it down.
 The first part of the declaration is obvious, `border`. This is the property that we're editing. Man, this is easy.
 
 Next, we have 3 parts in the value section. The first part is `5px`. Firstly, `px` stands for _pixels_. We used this above for our width and heights as well. You always have to include the units (just like in 5th grade math) in your styling, and our units here are pixels. Now, that whole first part, `5px`, is the border's thickness. You guessed it: it's 5 pixels thick. Gosh you're smart.
-The next part is the _border style_. You can plug in several words here, as indicated [on this webpage](http://www.w3schools.com/css/css_border.asp). We used `solid`, but you can also say `dotted`, `dashed`, or `double`. There are some other words you can use, but those depend on the color of the border.  
+The next part is the _border style_. You can plug in several words here, as indicated [on this webpage](http://www.w3schools.com/css/css_border.asp). We used `solid`, but you can also say `dotted`, `dashed`, or `double`. There are some other words you can use, but those depend on the color of the border.
 Color? What? OH YEAH. That's the third part of the border style. You can stick in any color for that, but in this example, we have `black`.
 
 Let's mix it up a bit with different borders for you to check out. I'm just going to keep using the same image, you can replace it with whatever. Stick this in the `<body>` tags of style1.html and check it out, and play with the values yourself!
@@ -400,7 +400,7 @@ Play with this one now:
 
     <p style="font-family: Arial; font-style: italic">This text is magnificent.</p>
 
-Browser time. You've now got some text in the font Arial, and it's italic! WOOO HOOOOOO.  
+Browser time. You've now got some text in the font Arial, and it's italic! WOOO HOOOOOO.
 The properties we used here are `font-family` and `font-style`. For the former, you can choose a lot of fonts, but you have to be careful. Not every computer has the same fonts. This is just my personal opinion: don't put something here besides Arial unless you've done some JavaScript magic. And because I'm assuming you don't know JavaScript, don't use this unless you're changing this to Arial. At least not yet. :)
 And for `font-style`, it can be `normal`, `oblique`, and `italic`. You can play with those now, it's pretty straightforward.
 

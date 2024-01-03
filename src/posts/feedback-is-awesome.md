@@ -2,7 +2,7 @@
 layout: "../layouts/BlogPost.astro"
 title: "Feedback is awesome"
 slug: feedback-is-awesome
-description: "I love getting feedback from people.  You learn most from it."
+description: "I love getting feedback from people. You learn most from it."
 added: "Feb 22 2014"
 tags: [advice, musings]
 ---
@@ -22,7 +22,7 @@ This made my day! I love getting positive feedback like this, it only makes me w
 And then, I also got an email from one of the higher ups at Intuit today:
 
 > We were just talking about you the other day, in relation to the Women in Technology initiative in QuickBooks Product Dev. We rolled out a formal goal of mentorship and sponsorship to develop a pipeline of women ready for director, group manager, principal engineer, and architect roles. Since we started... we have two new women group managers, a new woman principal engineer, and several new first-time managers. We have a monthly lunch with the women PD leaders, and we feature various guest speakers— mostly women execs at Intuit. Intuit also hosted a Girl Geek Dinner...
-> Btw, your work on ...[things I worked on at Intuit]... default template is now live in QBO. So you’ve got a legacy at Intuit from your internship.
+> Btw, your work on ...[things I worked on at Intuit]... default template is now live in QBO. So you've got a legacy at Intuit from your internship.
 
 Between the two messages, I don't know which one made me more happy. I love hearing that my views on mentorship are being spread, and that my work I'm doing is making a real impact.
 

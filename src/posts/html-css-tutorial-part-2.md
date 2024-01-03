@@ -142,9 +142,9 @@ So, you have some of the CSS basics down already. You're so smart. It's really a
 
 #### Classes
 
-Let's say that we have 8 `<p>` tags on our HTML page (hint: open style3.html in the **3 - Styles** folder).  
-If we want to style each of these tags differently, we can use _classes_. A class is actually an HTML attribute that you can name whatever you want.  
-Check out style3.html to see the classes I added to the `<p>` tags on the page. When you add a class, the user doesn't see it.  
+Let's say that we have 8 `<p>` tags on our HTML page (hint: open style3.html in the **3 - Styles** folder).
+If we want to style each of these tags differently, we can use _classes_. A class is actually an HTML attribute that you can name whatever you want.
+Check out style3.html to see the classes I added to the `<p>` tags on the page. When you add a class, the user doesn't see it.
 But, you can style specific classes to do what you want, instead of having all `<p>` tags be the same.
 
 How about we style one of the classes specifically? It's simple. Just take the class name you made up (I'll use the `poemtitle` class for my example) and add a period `.` in front of it to select it in CSS, like so:
@@ -154,8 +154,8 @@ How about we style one of the classes specifically? It's simple. Just take the c
 
     }
 
-And there you have it! Even though you might have different styles for your paragraphs, you can style the ones of class `poemtitle` individually.  
-For this example, let's make all paragraphs with the font family Arial, the `poemtitle`s font weight `bolder`, the `author`s the color `#555555`, and the `poem`s in `italic`.  
+And there you have it! Even though you might have different styles for your paragraphs, you can style the ones of class `poemtitle` individually.
+For this example, let's make all paragraphs with the font family Arial, the `poemtitle`s font weight `bolder`, the `author`s the color `#555555`, and the `poem`s in `italic`.
 Try doing it on your own if you can (just put your code in the given `<style>` tags), but you're welcome to cheat:
 
     p
@@ -259,7 +259,7 @@ Open up the **5 - Layout** folder, and use your editor to open `homepage.html`.
 
 Besides the `<div>` tags, everything here should look familiar. Each of the `<divs>` have a `class`, which means we should style those, right? Right.
 
-Within those `<style>` tags, let's add some pizzazz.  
+Within those `<style>` tags, let's add some pizzazz.
 First, let's throw in what we'll be styling: the `<html>` (it is unusual to style this, but I'll explain why we are later), `<body>`, and each of the 4 classes:
 
     html
@@ -320,18 +320,18 @@ This should be straightforward for you so far. The first thing we'll do is creat
 Whoa ho ho, slow down there. What the heck is with these `%` signs?? Well, what this means is that if, for example, a tag's `width` is `75%`, then it's width on the page will be 75% of it's _containing element._
 So when you see that the `.menu` class has a `width: 15%;`, it takes up 15% of its containing element's width, which is the `<body>` tag.
 
-Typically, the `height` property defaults to `0%` and the `width` property defaults to `100%`.  
+Typically, the `height` property defaults to `0%` and the `width` property defaults to `100%`.
 This is why we had to style the `height` properties of both `<html>` and `<body>`.
 If we had just made our `.menu` selector have a height of `100%`, we know that 100% of zero is just zero, so we wouldn't have a menu showing up!  
 When we made the `<body>` tag have `height: 100%`, it also would still be zero, because our `<html>` tag also had a height of 0 without the CSS helping it out.
-Now, if we had just said `height: 50px;` for `.menu`, we wouldn't need the `height` fixes for `<html>` and `<body>`, because it's given a set value, not a value dependent on others.  
+Now, if we had just said `height: 50px;` for `.menu`, we wouldn't need the `height` fixes for `<html>` and `<body>`, because it's given a set value, not a value dependent on others.
 Makes sense? I hope so. You're hot.
 
 Okay, so if you open `homepage.html` in the browser, you see nothing. That's okay. Let's change that by learning a few new CSS properties!
 
 ###### Background color
 
-One property that you will learn to know and love is `background-color`.  
+One property that you will learn to know and love is `background-color`.
 It does exactly what you would expect it to: it sets the background color of the element it is styling!  
 You can fill it in with HEX colors or RGB colors, just like we learned earlier, and the default color is white.
 
@@ -368,28 +368,28 @@ Let's add some backgrounds.
     	width: 100%;
     }
 
-Save in your editor and now refresh in that browser! WOW. COLOR. Now, our site definitely isn't perfect yet.  
+Save in your editor and now refresh in that browser! WOW. COLOR. Now, our site definitely isn't perfect yet.
 Let's throw some MORE new CSS properties at you!
 
 ###### Floating
 
 One property that you will probably use fairly often is `float`. This is one of those properties that you will learn to both love and hate.
 It's kind of magical.
-So, let's say that you want to have a picture in a paragraph. When you see a picture in a news article or even a paper you're writing, the picture is either on the left or the right.  
+So, let's say that you want to have a picture in a paragraph. When you see a picture in a news article or even a paper you're writing, the picture is either on the left or the right.
 It's the same in CSS! If you wanted to put a picture in a paragraph, you'd make the `<img>` tag inside a `<p>` tag have the properties `float: left;` or `float: right;`.
 So, what does this have to do with `<div>` tags? Why could you potentially hate it?
 
 I'll tell you.
 
-With CSS float, a given element can be pushed to the left or right, allowing other elements to wrap around it.  
-An element with `float` affecting it will move as far to the left or right as it can.  
+With CSS float, a given element can be pushed to the left or right, allowing other elements to wrap around it.
+An element with `float` affecting it will move as far to the left or right as it can.
 Usually this means all the way to the left or right of the containing element.
 
-Pretty simple, right? Right. Now, here's the cause for hate: sometimes, `float` just doesn't stop.  
+Pretty simple, right? Right. Now, here's the cause for hate: sometimes, `float` just doesn't stop.
 It has the potential to mess up your layouts and have things move around other things, and really just give you a headache.
 How do you stop that?
 
-With the `clear` property! On the element(s) after any floated elements, make sure that they have `clear: both;` on them (we say `both` because it turns off both `left` and `right` floating).  
+With the `clear` property! On the element(s) after any floated elements, make sure that they have `clear: both;` on them (we say `both` because it turns off both `left` and `right` floating).
 Let's add `float: left;` to the `.menu` and `.content` sections, and `clear: both;` to the `.footer`:
 
     html
@@ -428,7 +428,7 @@ Let's add `float: left;` to the `.menu` and `.content` sections, and `clear: bot
 
 Now if you refresh your browser, things are starting to look a bit more sexy. Like you.
 
-Let's add more delight to this! So let's think, what if you're on your website, but you want to see the footer.  
+Let's add more delight to this! So let's think, what if you're on your website, but you want to see the footer.
 You scroll down. What if, though, you want to see the header again? You'd have to scroll back up.
 
 That's exhausting.
@@ -497,8 +497,8 @@ So, let's get rid of our `float` on `.menu` and `.content`, and the `clear` on t
     	width: 100%;
     }
 
-We are starting to look really hot now.  
-If you refresh your page in the browser though, you'll notice that there's a little space to the left of our header and footer.  
+We are starting to look really hot now.
+If you refresh your page in the browser though, you'll notice that there's a little space to the left of our header and footer.
 Why the heck is that happening?
 
 I'll tell you.
@@ -509,7 +509,7 @@ I'll tell you.
 
 I made the diagram above to show you what the heck you'll be working with.
 
-First, let's look at the CSS property `margin`. Like you can see above, `margin` is the space _outside_ the content's border.  
+First, let's look at the CSS property `margin`. Like you can see above, `margin` is the space _outside_ the content's border.
 Think of it as the 1 inch margins when you write a paper, or the margins of the pages of a book.
 
 The HTML `<body>` tag actually has a natural margin, which is why our header and footer have the space on their sides. S
@@ -639,20 +639,20 @@ The same goes for `padding`, you can also do `padding: 5px 10px 15px 0px;`, etc.
     	width: 100%;
     }
 
-Now, with all that you've learned so far, you should probably make this a really great, functional website.  
+Now, with all that you've learned so far, you should probably make this a really great, functional website.
 I'll teach you just one more thing, and then I'll set you free like a bird or something.
 
 ###### Z-Index
 
 The property `z-index` isn't one that you'll run into super often, but it's something that will help you in the long run.
 
-Now, if you think of your screen as a stack of layers, like a stack of paper on the screen.  
+Now, if you think of your screen as a stack of layers, like a stack of paper on the screen.
 Layer 1 is the lowest layer, and the higher the number, the higher the layer.
 
-The numbers in `z-index` are the same. If an element has `z-index: 0;`, then it is a bottom layer.  
+The numbers in `z-index` are the same. If an element has `z-index: 0;`, then it is a bottom layer.
 If you have an element with a `z-index: 5;`, it's going to be on the 5th layer.
 
-When you create a page and you don't add `z-index` to anything, the layers are just in order.  
+When you create a page and you don't add `z-index` to anything, the layers are just in order.
 So in our example, the `.header` was created first, so it's on the lowest layer, and the `.footer` was created last so it is on the top layer.
 
 We don't want that. What if your `.content` had a ton of information and you had to scroll the page?  
@@ -730,7 +730,7 @@ Duh.
 
 ### The `<link>` Tag, Comments, and other Developer Joys
 
-Let's just say you want to reuse your styles across your website on every page. It makes sense.  
+Let's just say you want to reuse your styles across your website on every page. It makes sense.
 It'd be kind of annoying to have drastic changes on every page.
 
 #### The `<link>` tag
@@ -743,8 +743,8 @@ You write the `<link>` tag like this:
 
     <link rel="stylesheet" type="text/css" href="main.css">
 
-Let's take a look at those attributes. The `rel` attribute is for _relationship_.  
-It specifies the relationship between the current document and the linked document, which will almost always be `stylesheet`.  
+Let's take a look at those attributes. The `rel` attribute is for _relationship_.
+It specifies the relationship between the current document and the linked document, which will almost always be `stylesheet`.
 I've never actually seen it in action with anything other than `stylesheet`, but if you really want to know other values you can look it up.
 The `type` attribute will also pretty much always be `text/css`. If it's ever anything else when you want to use it with CSS, I will be quite surprised.
 And finally, `href`. You remember this one, I hope! It's just like our `<a>` tag. It is the URL of the stylesheet.
@@ -778,11 +778,11 @@ A comment in CSS is similar to HTML in that it has a beginning and end part, but
 
     /* This is a comment in CSS! */
 
-Just like in the HTML comments, you have a beginning `/*` and an end `*/`.  
+Just like in the HTML comments, you have a beginning `/*` and an end `*/`.
 If you open up main.css in the **7 - Project** folder, you can see the comments I wrote in there!  
 And again, you can have single-line comments, and multi-line ones too.
 
-Comments are great for keeping track of what you're doing, especially if a project you're working on spans over a period of time.  
+Comments are great for keeping track of what you're doing, especially if a project you're working on spans over a period of time.
 You can make notes for yourself to check later, or you could just tell someone who is reading your code that they are attractive.
 
 #### Other Developer Joys
