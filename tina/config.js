@@ -84,7 +84,6 @@ export default defineConfig({
 						name: "updated",
 						type: "datetime",
 						dateFormat: "MMM DD YYYY",
-						required: false,
 					},
 					{
 						type: "rich-text",
