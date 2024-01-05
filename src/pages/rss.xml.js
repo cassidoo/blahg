@@ -3,11 +3,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../config";
 
 let posts = Object.values(import.meta.glob("../posts/*.md", { eager: true }));
 
-posts = posts.sort(
-	(a, b) =>
-		new Date(b.frontmatter.updated || b.frontmatter.added).valueOf() -
-		new Date(a.frontmatter.updated || a.frontmatter.added).valueOf()
-);
+console.log(posts);
 
 export const get = () =>
 	rss({
