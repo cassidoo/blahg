@@ -9,7 +9,7 @@ posts = posts.sort(
 		new Date(a.frontmatter.updated || a.frontmatter.added).valueOf()
 );
 
-export const get = () =>
+export const GET = () =>
 	rss({
 		title: SITE_TITLE,
 		description: SITE_DESCRIPTION,
