@@ -15,7 +15,7 @@ const posts = (await Astro.glob("../posts/*.md")).sort(
 );
 ---
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en-us">
 	<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 	<body>
@@ -33,6 +33,13 @@ const posts = (await Astro.glob("../posts/*.md")).sort(
 					}
 				</ul>
 			</content>
+
+			<p class="center">
+				You can also <a href="https://blog.cassidoo.co/rss.xml">
+					subscribe with RSS!
+				</a>
+			</p>
+
 			<Footer />
 		</main>
 		<ColorScript />

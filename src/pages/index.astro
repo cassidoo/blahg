@@ -14,7 +14,7 @@ const posts = await Astro.glob("../posts/*.md");
 const tags = getTags(posts);
 ---
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en-us">
 	<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 	<body>
@@ -27,6 +27,13 @@ const tags = getTags(posts);
 			<h3>Here's my most recent posts</h3>
 
 			<HomePosts allPosts={posts} />
+
+			<p class="center">
+				You can also <a href="https://blog.cassidoo.co/rss.xml">
+					subscribe with RSS!
+				</a>
+			</p>
+			<br />
 
 			<Tags tags={tags} all />
 		</main>
