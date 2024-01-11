@@ -10,10 +10,10 @@ tags:
 added: 2024-01-11T06:52:49.475Z
 ---
 
-I am really, really excited to have made it to... *drum roll*...
+I am really, really excited to have made it to... _drum roll_...
 
-> Jumblie #100
-> 🟠🔴🟢🔵
+> Jumblie #100  
+> 🟠🔴🟢🔵  
 > 4 guesses in 40s
 
 That's right, it's the **100th** [Jumblie](https://jumblie.com/) puzzle!
