@@ -1,13 +1,14 @@
 ---
-layout: "../layouts/BlogPost.astro"
-title: "Experimenting with AI voice"
+layout: ../layouts/BlogPost.astro
+title: Experimenting with AI voice
 slug: ai-voice-test
-description: "I tried out the ElevenLabs Beta!"
-added: "Jan 06 2024"
-tags: [learning]
+description: I tried out the ElevenLabs Beta!
+tags:
+  - learning
+added: 2024-01-06T00:00:00.000Z
 ---
 
-I tried out the [ElevenLabs](https://elevenlabs.io/) beta in February last year, and I finally uploaded the audio of my little test!
+I tried out the [ElevenLabs](https://elevenlabs.io/?from=partnersmith2011) beta in February last year, and I finally uploaded the audio of my little test!
 
 In my experiment, I used [one of my older blog posts](https://blog.cassidoo.co/post/private-wins/). After passing in some voice samples to ElevenLabs, I had it read the blog post in "my" voice. Then, I recorded my own reading of the blog post, too.
 
