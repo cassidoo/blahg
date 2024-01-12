@@ -3,7 +3,7 @@ layout: "../layouts/BlogPost.astro"
 title: "I miss human curation"
 slug: human-curation
 description: "Where are my internet friends? And where are their weird blogs?"
-added: "Jan 11 2024"
+added: "Jan 12 2024"
 tags: [musings]
 ---
 
