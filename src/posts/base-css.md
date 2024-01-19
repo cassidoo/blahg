@@ -27,8 +27,8 @@ I use this for a bunch of projects where I just need some plain ol' styling that
 
 You can save [cass.run/basecss](https://cass.run/basecss) if you want a quick link to the snippet, and here's a little demo of what it looks like:
 
-<p class="codepen" data-height="300" data-theme-id="light" data-default-tab="css,result" data-slug-hash="YzgVYWV" data-editable="true" data-user="cassidoo" data-token="4d5029cc5b9f0945b49d1e1bb0c30b12" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-  <span>See the Pen <a href="https://codepen.io/cassidoo/pen/YzgVYWV/4d5029cc5b9f0945b49d1e1bb0c30b12">
+<p class="codepen" data-height="300" data-theme-id="light" data-default-tab="result" data-slug-hash="YzgVYWV" data-editable="true" data-user="cassidoo" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/cassidoo/pen/YzgVYWV">
   Cassidy's base CSS demo</a> by Cassidy (<a href="https://codepen.io/cassidoo">@cassidoo</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
