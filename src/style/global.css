@@ -146,6 +146,11 @@ ul.tags-list {
 	font-size: 1.3em;
 }
 
+.tags {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
 .tag {
 	display: inline-block;
 	margin-right: 20px;

@@ -3,7 +3,7 @@ const { tags, all } = Astro.props;
 ---
 
 {all && <h3>View posts by tag</h3>}
-<div>
+<div class="tags">
 	{
 		tags &&
 			tags.map((tag) => (
