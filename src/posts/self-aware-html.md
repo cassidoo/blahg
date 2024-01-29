@@ -1,8 +1,8 @@
 ---
 layout: "../layouts/BlogPost.astro"
-title: "Use JavaScript to let an HTML element get its own index"
+title: 'HTML "self-awareness" with sibling indexing in JavaScript'
 slug: self-aware-html
-description: "Make your HTML more 'self-aware' with a funky little JavaScript trick."
+description: 'Make your HTML more "self-aware" with a fun little trick to get its own index.'
 added: "Jan 28 2024"
 tags: [technical]
 ---
