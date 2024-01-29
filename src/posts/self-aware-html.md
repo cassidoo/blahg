@@ -3,7 +3,7 @@ layout: "../layouts/BlogPost.astro"
 title: "Use JavaScript to let an HTML element get its own index"
 slug: self-aware-html
 description: "Make your HTML more 'self-aware' with a funky little JavaScript trick."
-added: "Jan 27 2024"
+added: "Jan 28 2024"
 tags: [technical]
 ---
 
