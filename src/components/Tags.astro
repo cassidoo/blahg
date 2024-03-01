@@ -2,7 +2,7 @@
 const { tags, all } = Astro.props;
 ---
 
-{all && <h3>View posts by tag</h3>}
+{all && <h3 class="tag-title">View posts by tag</h3>}
 <div class=`${all && "tags"}`>
 	{
 		tags &&

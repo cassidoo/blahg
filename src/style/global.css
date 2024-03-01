@@ -58,6 +58,11 @@ body.dark-mode nav {
 	background: var(--transblack);
 }
 
+.tag-title {
+	font-weight: 400;
+	color: var(--black);
+}
+
 @media (prefers-color-scheme: dark) {
 	::selection {
 		background-color: #0f0f0f;
@@ -89,6 +94,9 @@ body.dark-mode nav {
 	}
 	body .tag {
 		color: var(--gray);
+	}
+	.tag-title {
+		color: var(--white);
 	}
 }
 
