@@ -1,7 +1,7 @@
 ---
 import Post from "../components/Post.astro";
 
-const { allPosts } = Astro.props;
+const { allPosts, numPostToShow } = Astro.props;
 
 //.sort(() => 0.5 - Math.random()).slice(0, 3);
 
@@ -11,18 +11,18 @@ let posts = allPosts
 			new Date(b.frontmatter.updated || b.frontmatter.added).valueOf() -
 			new Date(a.frontmatter.updated || a.frontmatter.added).valueOf()
 	)
-	.slice(0, 5);
+	.slice(0, numPostToShow);
 ---
 
 <content>
-	<ul class="posts-list">
-		{
-			posts.map(
-				({
-					url,
-					frontmatter: { description, slug, title, tags, added: date },
-				}) => <Post {url} {description} {date} {slug} {title} {tags} />
-			)
-		}
-	</ul>
+<ul class="posts-list">
+	{
+		posts.map(
+			({
+				url,
+				frontmatter: { description, slug, title, tags, added: date },
+			}) => <Post {url} {description} {date} {slug} {title} {tags} />	
+		)
+	}
+</ul>
 </content>

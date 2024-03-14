@@ -12,6 +12,7 @@ import getTags from "../scripts/getTags";
 const posts = await Astro.glob("../posts/*.md");
 
 const tags = getTags(posts);
+const numPostToShow = 5;
 ---
 
 <!doctype html>
@@ -20,13 +21,14 @@ const tags = getTags(posts);
 	<body>
 		<Header title={"Cassidy Williams"} />
 		<main>
-			<About />
+			
+				<About />
 
 			<br />
 
-			<h3>Here's my most recent posts</h3>
+			<h2 class="center">Here's my last {numPostToShow} recent posts</h2>
 
-			<HomePosts allPosts={posts} />
+			<HomePosts allPosts={posts} numPostToShow={numPostToShow} />
 
 			<p class="center">
 				You can also <a href="https://blog.cassidoo.co/rss.xml">

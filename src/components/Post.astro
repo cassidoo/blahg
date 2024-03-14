@@ -1,9 +1,9 @@
 ---
 // import Tag from './Tag.astro';
 const { slug, title, tags, description, date } = Astro.props;
+const tagJoin = tags.join(",")
 ---
-
-<li class="post">
+<article class="box-post post">
 	<a href={`/post/${slug}/`} class="title">{title}</a>
 	<time datetime={date}>
 		{
@@ -14,16 +14,15 @@ const { slug, title, tags, description, date } = Astro.props;
 			})
 		}
 	</time>
-	<br />
 	{description && <span class="excerpt">{description}</span>}
-	<div>
+	<div class="tag-box">
 		{
 			tags &&
 				tags.map((tag) => (
-					<a class="tag" href={`/tag/${tag}`}>
+					<a class="tag" data-tag={tagJoin} href={`/tag/${tag}`}>
 						#{tag}
 					</a>
 				))
 		}
 	</div>
-</li>
+</article>
