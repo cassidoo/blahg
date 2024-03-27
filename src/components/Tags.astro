@@ -1,17 +1,18 @@
 ---
-const { tags, all } = Astro.props;
+const { tags, all, blog_footer } = Astro.props;
 ---
 
 {all && <h3 class="tag-title">View posts by tag</h3>}
 <div class=`${all && "tags"}`>
+	{blog_footer && <>Tags: </>}
 	{
 		tags &&
 			tags.map((tag) => (
 				<>
-					<a class="tag" href={`/tag/${tag}`}>
+					<a class="tag tags_title" href={`/tag/${tag}`}>
 						#{tag}
 					</a>
-					{` `}
+					{``}
 				</>
 			))
 	}

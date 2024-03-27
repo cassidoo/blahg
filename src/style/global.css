@@ -4,14 +4,18 @@
   License MIT: https://github.com/HermanMartinus/bearblog/blob/master/LICENSE.md
  */
 :root {
-	--white: #efefef;
-	--transwhite: rgba(239, 239, 239, 0.7);
+	--white: #fff;
+	--transwhite: rgba(255, 255, 255, 0.7);
 	--moretranswhite: rgba(239, 239, 239, 0.1);
 	--black: #252525;
 	--transblack: rgba(37, 37, 37, 0.7);
 	--moretransblack: rgba(37, 37, 37, 0.1);
 	--gray: #6b6b6b;
-	--highlight: #e5ffc3;
+	--lightgray: #eeeeee;
+	--darkgray: #bfbfbf;
+	--highlight: #76efe7;
+	--linkhighlight: #6fe7df;
+	--linkhover: #5fc2bb;
 	--red: #e4002b;
 	--green: #24d05a;
 	--pink: #eb4888;
@@ -45,7 +49,7 @@ b {
 	color: var(--black);
 }
 
-body.dark-mode,
+/* body.dark-mode,
 body.dark-mode button,
 body.dark-mode h1,
 body.dark-mode .go-home,
@@ -56,14 +60,14 @@ button.dark-mode button {
 }
 body.dark-mode nav {
 	background: var(--transblack);
-}
+} */
 
 .tag-title {
 	font-weight: 400;
 	color: var(--black);
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
 	::selection {
 		background-color: #0f0f0f;
 		color: var(--white);
@@ -98,7 +102,7 @@ body.dark-mode nav {
 	.tag-title {
 		color: var(--white);
 	}
-}
+} */
 
 h2,
 h3,
@@ -115,8 +119,51 @@ header {
 
 a {
 	color: var(--black);
-	text-decoration-thickness: 0.3ex;
-	text-underline-offset: 0.3ex;
+	text-decoration: none;
+	background-color: var(--linkhighlight);
+	padding-right: 4px;
+	padding-left: 4px;
+	border-radius: 2px
+}
+
+a:hover {
+    background-color: var(--linkhover); /* Change to the color you want on hover */
+}
+
+.tags_title {
+	color: var(--black);
+	text-decoration: none;
+	background-color: var(--lightgray);
+	padding-right: 4px;
+	padding-left: 4px;
+	border-radius: 2px
+}
+
+.tags_title:hover {
+	color: var(--black);
+	text-decoration: none;
+	background-color: var(--lightgray);
+	padding-right: 4px;
+	padding-left: 4px;
+	border-radius: 2px
+}
+
+.navigation_title {
+	color: var(--black);
+	text-decoration: none;
+	background-color: var(--lightgray);
+	padding-right: 4px;
+	padding-left: 4px;
+	border-radius: 2px
+}
+
+.navigation_title:hover {
+	color: var(--black);
+	text-decoration: none;
+	background-color: var(--darkgray);
+	/* padding-right: 4px;
+	padding-left: 4px; */
+	border-radius: 2px
 }
 
 nav {
@@ -124,6 +171,7 @@ nav {
 	top: 0;
 	text-align: center;
 	background: var(--transwhite);
+	background-color: transparent;
 	-webkit-backdrop-filter: blur(1px);
 	backdrop-filter: blur(1px);
 }
@@ -234,7 +282,7 @@ h3 {
 	max-width: 350px;
 }
 
-article :not(.article-title) {
+article :not(.article-title, .blog-post-subtitle, .blog-post-title) {
 	line-height: 1.8;
 }
 
@@ -260,8 +308,73 @@ ul li time {
 	white-space: nowrap;
 }
 
+
+.blog-post-title {
+    font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+    font-weight: 700;
+	line-height: 1.2;
+    -webkit-font-smoothing: antialiased;
+    color: #353535;
+    margin-bottom: 0px;
+    text-decoration: none;
+	font-size: 35px;
+}
+
+.blog-post-subtitle {
+
+	font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+    font-weight: 500;
+	line-height: 1.2;
+    -webkit-font-smoothing: antialiased;
+    color: #CAD2D4;
+    margin-top: 10px;
+    margin-bottom: 35px;
+    font-size: 20px;
+}
+
+.website-header-title {
+    /* font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif; */
+    font-weight: 500;
+    -webkit-font-smoothing: antialiased;
+    color: #fff;
+    margin-bottom: 35px;
+    text-decoration: none;
+	background-color: #053B50;
+	border-radius: 10px;
+	padding: 10px;
+}
+
+.website-header-subtitle {
+	font-weight: 100;
+    -webkit-font-smoothing: antialiased;
+    color: value(--linkhighlight);
+    margin-bottom: 35px;
+    font-size: 20px;
+}
+
+.blog-post-text .blog-post-subtitle {
+    font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+    font-weight: 500;
+    letter-spacing: -1.5px;
+    -webkit-font-smoothing: antialiased;
+    color: #CAD2D4;
+    margin-top: -30px;
+    margin-bottom: 35px;
+    font-size: 20px;
+}
+
+.text-light {
+	font-weight: lighter;
+	color: var(--gray);
+}
+
 @media (max-width: 600px) {
 	nav a:not(:last-child) {
 		padding: 0;
 	}
+
+	body {
+		padding: 0;
+	}
+
 }

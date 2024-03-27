@@ -10,7 +10,7 @@ const posts = await Astro.glob("../posts/*.md");
 const allTags = getTags(posts);
 
 let {
-	content: { title, description, added, updated, tags, heroImage },
+	content: { title, description, added, updated, tags, time, location },
 } = Astro.props;
 
 added = new Date(added).toLocaleDateString(
@@ -19,6 +19,8 @@ added = new Date(added).toLocaleDateString(
 		year: "numeric",
 		month: "short",
 		day: "numeric",
+		hour: '2-digit',
+        minute: '2-digit',
 	}
 );
 
@@ -29,6 +31,8 @@ if (updated) {
 			year: "numeric",
 			month: "short",
 			day: "numeric",
+			hour: '2-digit',
+        	minute: '2-digit',
 		}
 	);
 }
@@ -41,22 +45,40 @@ if (updated) {
 		<Header />
 		<main>
 			<article>
-				{heroImage && <img width={720} height={360} src={heroImage} alt="" />}
-				<h1 class="article-title">{title}</h1>
-				{updated ?
-					<span><time>{added}</time>, last updated on <time>{updated}</time></span>
-					:
-					<span>{added && <time>{added}</time>}</span>
-				}
-				<Tags tags={tags} />
+				<!-- {heroImage && <img width={720} height={360} src={heroImage} alt="" />} -->
+				<h1 class="blog-post-title">{title}</h1>
+				<h4 class="blog-post-subtitle">{description}</h4>
+
+				<!-- <Tags tags={tags} /> -->
 				<hr />
 				<div class="blog-post">
 					<slot />
 				</div>
+				<br/>
+				<br/>
+				<hr /> <!-- Add this line -->
+				<footer> <!-- Add this block -->
+					<ul>
+					<!-- <li>Date: <span class="text-light">{added}</span></li> -->
+					{updated ?
+						<li>Date: <span class="text-light">{added}</span></li><li>Updated: <span class="text-light">{updated}</span></li>
+						:
+						<li>{added && <time>{added}</time>}</li>
+					}
+					<!-- <li>Time: <span class="text-light">{time}</span></li> -->
+					<li>Location: <span class="text-light">{location}</span></li>
+					<li><Tags tags={tags} blog_footer /></li>
+					</ul>
+				</footer>
+				<hr /> <!-- Add this line -->
+				<br/>
+				<br/>
 			</article>
 		</main>
 		<Tags tags={allTags} all />
 		<Footer />
 		<ColorScript />
+
+		<>
 	</body>
 </html>
