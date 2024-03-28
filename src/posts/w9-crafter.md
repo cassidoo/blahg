@@ -19,11 +19,11 @@ I stewed on that for a while, and then learned that the Form W-9s in the U.S. we
 
 ## The initial prototype
 
-I first started building the app in the browser, using PDF.js and Download.js to take a PDF and edit it, and then download it to your computer.
+I first started building the app in the browser, using [PDF.js](https://mozilla.github.io/pdf.js/) and [Download.js](https://github.com/rndme/download) to take a PDF and edit it, and then download it to your computer.
 
 ![W-9 Crafter initial web app](/assets/w9screenshot1.png)
 
-At first, I built something that would have you actually fill out an HTML form, populating the entire document, but realized all I *really* needed to generate every time was a new date on an existing form. Scope creep be darned!
+At first, I built something that would have you actually fill out an HTML form, populating the entire document, but realized all I _really_ needed to generate every time was a new date on an existing form. Scope creep be darned!
 
 ## Electron time
 
@@ -33,7 +33,7 @@ Normally, when you upload a file via the HTML `<input>` tag, you can't get the f
 
 ![W-9 Crafter app](/assets/screenshot-windows-2.png)
 
-I thought I could be done there, but alas, Electron is *huge*. When I bundled the entire application, it was 300MB. That's almost the entire storage a 1st generation iPod Shuffle could hold! Waaaay too big for a small app like this.
+I thought I could be done there, but alas, Electron is _huge_. When I bundled the entire application, it was 300MB. That's almost the entire storage a 1st generation iPod Shuffle could hold! Waaaay too big for a small app like this.
 
 ## Incoming: Tauri!
 
@@ -43,7 +43,7 @@ I want to take a pause to do a quick shout out to [Jacob Bolda](https://www.jaco
 
 Tauri was a really interesting thing to try out for this app in particular. They had just released version 2 of the framework, which made my application much easier to build, but with the con of the documentation not being fully up-to-date yet. There were some hiccups I ran into (for example permissions around opening files and writing new files) but nothing too bad.
 
-The one thing that *was* particularly weird is that the default for Tauri saving files is that it overwrites an existing file instead of generating a new one when they have the same name (for example it *doesn't* do `blah.png` and then `blah (1).png`), which was challenging to figure out. I ended up making [a little file checker](https://gist.github.com/cassidoo/c780a0045acb6b2c5b0b51b99ebda8b0) to solve that.
+The one thing that _was_ particularly weird is that the default for Tauri saving files is that it overwrites an existing file instead of generating a new one when they have the same name (for example it _doesn't_ do `blah.png` and then `blah (1).png`), which was challenging to figure out. I ended up making [a little file checker](https://gist.github.com/cassidoo/c780a0045acb6b2c5b0b51b99ebda8b0) to solve that.
 
 ![W-9 Crafter app](/assets/screenshot-windows-1.png)
 
@@ -57,6 +57,8 @@ Okay! Stop shouting!
 
 You can get W-9 Crafter from [cass.run/w9](https://cass.run/w9), and use discount code `BLAHG20` to get 20% off because I like you. Generally. Currently. We're working on our relationship.
 
-This is my first time ever selling an app that I've made. I admit I don't know a lot about pricing, and I haven't shipped something solo like this before. It's been a cool learning experience making a [Product Hunt listing](https://www.producthunt.com/posts/w-9-crafter), a [small demo video](https://youtu.be/er1KSIZCHdA), and allll the social posts ([Twitter](https://twitter.com/cassidoo/status/1770900985382138291), [LinkedIn](https://www.linkedin.com/feed/update/urn:li:activity:7176671512903528448/), [etc](https://youtu.be/dQw4w9WgXcQ)).
+This is my first time ever selling an app that I've made. I admit I don't know a lot about pricing, and I haven't shipped something solo like this before, so I was pretty nervous to make this go live! I chatted with several people who were super helpful in telling me how I should price based on how much time it could save someone, and how much time it saves me on average, how long it took me to build, and also just what they would pay for it. I've felt some impostor syndrome asking for... literally anything beyond "free", BUT, I've made sales, so it's good to be uncomfortable! You should charge for your work! Ahh!
+
+It's been a cool learning experience making a [Product Hunt listing](https://www.producthunt.com/posts/w-9-crafter), a [small demo video](https://youtu.be/er1KSIZCHdA), and allll the social posts ([Twitter](https://twitter.com/cassidoo/status/1770900985382138291), [LinkedIn](https://www.linkedin.com/feed/update/urn:li:activity:7176671512903528448/), [etc](https://youtu.be/dQw4w9WgXcQ)).
 
 Thanks for following along!
