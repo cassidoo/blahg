@@ -71,6 +71,40 @@ export default defineConfig({
 						name: "tags",
 						type: "string",
 						list: true,
+						options: [
+							{
+								value: "technical",
+								label: "Technical",
+							},
+							{
+								value: "advice",
+								label: "Advice",
+							},
+							{
+								value: "events",
+								label: "Events",
+							},
+							{
+								value: "learning",
+								label: "Learning",
+							},
+							{
+								value: "meta",
+								label: "Meta",
+							},
+							{
+								value: "work",
+								label: "Work",
+							},
+							{
+								value: "personal",
+								label: "Personal",
+							},
+							{
+								value: "musings",
+								label: "Musings",
+							},
+						],
 					},
 					{
 						label: "Added",
