@@ -1,0 +1,36 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import ColorScript from "../components/ColorScript.astro";
+import Tags from "../components/Tags.astro";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../config";
+import getTags from "../scripts/getTags";
+
+const posts = await Astro.glob("../posts/*.md");
+
+const tags = getTags(posts);
+---
+
+<!doctype html>
+<html lang="en-us">
+	<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	<body>
+		<Header title={"Cassidy Williams"} />
+		<main>
+			lol hi
+
+			<br />
+
+			you found me
+
+			<br />
+
+			I am trapped inside of this website
+
+			<Tags tags={tags} all />
+		</main>
+		<Footer />
+		<ColorScript />
+	</body>
+</html>
