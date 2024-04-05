@@ -3,7 +3,7 @@ layout: ../layouts/BlogPost.astro
 title: Building W-9 Crafter
 slug: w9-crafter
 description: >-
-  I built an app for generating Form W-9s for U.S. contrators and freelancers,
+  I built an app for generating Form W-9s for U.S. contractors and freelancers,
   here's how!
 tags:
   - learning
