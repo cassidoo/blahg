@@ -3,7 +3,7 @@ import sitemap from "@astrojs/sitemap";
 
 // https://astro.build/config
 export default defineConfig({
-	site: "yourblogurl",
+	site: "https://blahg.netlify.app/",
 	base: "/",
 	integrations: [sitemap()],
 	markdown: {
