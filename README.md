@@ -6,6 +6,21 @@ Hello, welcome. This is a blog ("blahg" is the proper spelling for Chicagoans), 
 
 [blahg.netlify.app](https://blahg.netlify.app/)
 
+## To use the template
+
+- Connect to your chosen hosting provider (see Deploy to Netlify button below if you want to go that route, otherwise use the GitHub template button above and pick a different one)
+- Make an account at [tina.io](https://tina.io/)
+- Add your TinaCMS keys (see below)
+- Update `astro.config.mjs` with your domain
+- Edit `src/config.js`
+- Add your URL in line 1 of `public/robots.txt`
+- Edit the images in `public/` (optional)
+- Edit whatever tags you want in `tina/config.js` (optional)
+
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/cassidoo/blahg)
+
+And finally, please ping me (via social media, or in a GitHub Issue, or whatever) if you use this template! I would love to see your writing and subscribe to your RSS feed!
+
 ## Run it yourself
 
 All commands are run from the root of the project, from a terminal:
