@@ -18,7 +18,7 @@ const tags = getTags(posts);
 <html lang="en-us">
 	<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 	<body>
-		<Header title={"Cassidy Williams"} />
+		<Header title={SITE_TITLE} />
 		<main>
 			<About />
 
@@ -29,7 +29,7 @@ const tags = getTags(posts);
 			<HomePosts allPosts={posts} />
 
 			<p class="center">
-				You can also <a href="https://blog.cassidoo.co/rss.xml">
+				You can also <a href="https://blahg.netlify.app/rss.xml">
 					subscribe with RSS!
 				</a>
 			</p>

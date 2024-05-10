@@ -1,23 +1,20 @@
 ---
 import HeaderLink from "./HeaderLink.astro";
-import { SITE_TITLE } from "../config";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../config";
 ---
 
 <header>
 	<div class="header-section">
 		<div class="header-frame">
 			<h1>{SITE_TITLE}</h1>
-			<h2>a blog, or whatever</h2>
+			<h2>{SITE_DESCRIPTION}</h2>
 		</div>
 	</div>
 </header>
 <nav>
 	<HeaderLink href="/">home</HeaderLink>
 	<HeaderLink href="/posts">posts</HeaderLink>
-	<HeaderLink href="https://cassidoo.co">website</HeaderLink>
-	<HeaderLink href="https://cassidoo.co/newsletter" target="_blank"
-		>newsletter
-	</HeaderLink>
+	<HeaderLink href="https://cassidoo.co">other</HeaderLink>
 </nav>
 <style>
 	h2 {

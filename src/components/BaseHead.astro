@@ -2,7 +2,7 @@
 import "../style/fonts.css";
 import "../style/global.css";
 
-import { SITE_TITLE } from "../config";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../config";
 
 const { title, description, image = "/home-blog-card.png" } = Astro.props;
 ---
@@ -13,9 +13,6 @@ const { title, description, image = "/home-blog-card.png" } = Astro.props;
 	<meta name="viewport" content="width=device-width,initial-scale=1" />
 	<link rel="icon" type="image/svg+xml" href="/favicon.ico" />
 	<meta name="generator" content={Astro.generator} />
-
-	<!-- Web Monetization -->
-	<meta name="monetization" content="$ilp.uphold.com/rEgHHBQGDUDP" />
 
 	<!-- Primary Meta Tags -->
 	<title>{title}</title>
@@ -37,13 +34,6 @@ const { title, description, image = "/home-blog-card.png" } = Astro.props;
 	<meta name="twitter:creator" content="@cassidoo" />
 	<meta name="twitter:image" content={new URL(image, Astro.url)} />
 
-	<link rel="preconnect" href="https://fonts.googleapis.com" />
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-	<link
-		href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
-		rel="stylesheet"
-	/>
-
 	<!-- RSS Link -->
 	<link
 		rel="alternate"
@@ -54,11 +44,4 @@ const { title, description, image = "/home-blog-card.png" } = Astro.props;
 
 	<!-- Sitemap -->
 	<link rel="sitemap" href="/sitemap-index.xml" />
-
-	<!-- Google Search Console -->
-	<meta name="google-site-verification" content="4G1fPeskmgxlQRWUoJxDlkDxL0VswExwh1MuRAwkQzg" />
-
-	<!-- Fathom -->
-	<script src="https://cdn.usefathom.com/script.js" data-site="OHWKNQJQ" defer
-	></script>
 </head>
