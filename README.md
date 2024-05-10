@@ -1,6 +1,8 @@
 # Cassidy's blog template
 
-Hello, welcome. This is a blog ("blahg" is the proper spelling for Chicagoans), or digital garden, or whatever. It's built with [Astro](https://astro.build), and uses [TinaCMS](https://tina.io) to edit the content!
+[![Netlify Status](https://api.netlify.com/api/v1/badges/eab04209-5f7f-41ed-a8dd-c45a9ebb1834/deploy-status)](https://app.netlify.com/sites/blahg/deploys)
+
+Hello, welcome. This is a blog ("blahg" is the proper spelling for Chicagoans) template. It's built with [Astro](https://astro.build), and uses [TinaCMS](https://tina.io) to edit the content!
 
 ## See the blahg
 
@@ -14,8 +16,12 @@ Hello, welcome. This is a blog ("blahg" is the proper spelling for Chicagoans), 
 - Update `astro.config.mjs` with your domain
 - Edit `src/config.js`
 - Add your URL in line 1 of `public/robots.txt`
+- Add your links in `src/components/Header.astro`
+- Update the intro in `pages/about.md`
 - Edit the images in `public/` (optional)
 - Edit whatever tags you want in `tina/config.js` (optional)
+
+After this, you can add your content to `src/posts` with Markdown files, or with TinaCMS by going to `yoururl.com/admin`!
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/cassidoo/blahg)
 
