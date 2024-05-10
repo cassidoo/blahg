@@ -1,5 +1,5 @@
 ---
-import "../style/fonts.css";
+import { AstroFont } from "astro-font";
 import "../style/global.css";
 
 import { SITE_TITLE, SITE_DESCRIPTION } from "../config";
@@ -44,4 +44,39 @@ const { title, description, image = "/home-blog-card.png" } = Astro.props;
 
 	<!-- Sitemap -->
 	<link rel="sitemap" href="/sitemap-index.xml" />
+
+	<!-- Fonts -->
+	<AstroFont
+      config={[
+        {
+          name: "iA",
+          src: [
+            {
+              style: 'normal',
+              weight: '400',
+              path: 'https://cdn.jsdelivr.net/fontsource/fonts/ia-writer-mono@latest/latin-400-normal.woff2'
+            },
+            {
+              style: 'normal',
+              weight: '700',
+              path: 'https://cdn.jsdelivr.net/fontsource/fonts/ia-writer-mono@latest/latin-700-normal.woff2'
+            },
+            {
+              style: 'italic',
+              weight: '400',
+              path: 'https://cdn.jsdelivr.net/fontsource/fonts/ia-writer-mono@latest/latin-400-italic.woff2'
+            },
+            {
+              style: 'italic',
+              weight: '700',
+              path: 'https://cdn.jsdelivr.net/fontsource/fonts/ia-writer-mono@latest/latin-700-italic.woff2'
+            },
+          ],
+          preload: false,
+          display: "swap",
+          fallback: "monospace",
+          cssVariable: "font-ia",
+        },
+      ]}
+    />
 </head>

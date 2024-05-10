@@ -37,7 +37,7 @@ html,
 body,
 button,
 code {
-	font-family: "iA Writer Mono", monospace;
+	font-family: var(--font-ia);
 }
 h1,
 strong,
