@@ -23,7 +23,7 @@ export default defineConfig({
 			{
 				name: "post",
 				label: "Posts",
-				path: "src/posts",
+				path: "posts",
 				defaultItem: () => ({
 					title: "New Post",
 					added: new Date(),

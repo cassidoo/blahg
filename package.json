@@ -1,6 +1,6 @@
 {
 	"name": "@cassidoo/blahg",
-	"version": "0.0.1",
+	"version": "0.0.5",
 	"private": true,
 	"scripts": {
 		"dev": "npx tinacms dev -c 'astro dev'",
