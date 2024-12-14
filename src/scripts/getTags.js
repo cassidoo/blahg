@@ -2,7 +2,7 @@ export default function getTags(posts) {
 	// Get tags from all posts
 	const allTags = posts
 		.map((post) => {
-			const postTags = post.frontmatter.tags;
+			const postTags = post.data.tags;
 			let allTags = [];
 
 			if (postTags?.length > 0) {

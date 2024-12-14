@@ -8,8 +8,8 @@ const { allPosts } = Astro.props;
 let posts = allPosts
 	.sort(
 		(a, b) =>
-			new Date(b.frontmatter.updated || b.frontmatter.added).valueOf() -
-			new Date(a.frontmatter.updated || a.frontmatter.added).valueOf()
+			new Date(b.data.updated || b.data.added).valueOf() -
+			new Date(a.data.updated || a.data.added).valueOf(),
 	)
 	.slice(0, 5);
 ---
@@ -20,7 +20,7 @@ let posts = allPosts
 			posts.map(
 				({
 					url,
-					frontmatter: { description, slug, title, tags, added: date },
+					data: { description, slug, title, tags, added: date },
 				}) => <Post {url} {description} {date} {slug} {title} {tags} />
 			)
 		}

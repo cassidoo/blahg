@@ -26,7 +26,6 @@ export default defineConfig({
 				path: "src/posts",
 				defaultItem: () => ({
 					title: "New Post",
-					layout: "../layouts/BlogPost.astro",
 					added: new Date(),
 					tags: [],
 				}),
@@ -40,13 +39,6 @@ export default defineConfig({
 					},
 				},
 				fields: [
-					{
-						name: "layout",
-						label: "Layout",
-						type: "string",
-						required: true,
-						searchable: false,
-					},
 					{
 						name: "title",
 						label: "Title",

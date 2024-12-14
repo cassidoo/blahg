@@ -1,4 +1,5 @@
 ---
+import { getCollection } from "astro:content";
 import BaseHead from "../../components/BaseHead.astro";
 import Header from "../../components/Header.astro";
 import Footer from "../../components/Footer.astro";
@@ -7,11 +8,10 @@ import ColorScript from "../../components/ColorScript.astro";
 
 import { SITE_TITLE, SITE_DESCRIPTION } from "../../config";
 
-// Credit to @rachsmithcodes for helping out my lil ol brain
 export async function getStaticPaths() {
-	let posts = await Astro.glob(`../../posts/*.md`);
+	let posts = await getCollection("posts");
 	const tags = posts.reduce((allTags, post) => {
-		const postTags = post.frontmatter.tags;
+		const postTags = post.data.tags;
 		if (postTags) {
 			postTags.forEach((tag) => {
 				if (!allTags[tag]) {
@@ -35,9 +35,7 @@ const { tag } = Astro.props;
 const { tag: currentTag } = Astro.params;
 
 let sortedPosts = tag.sort(
-	(a, b) =>
-		new Date(b.frontmatter.added).valueOf() -
-		new Date(a.frontmatter.added).valueOf()
+	(a, b) => new Date(b.data.added).valueOf() - new Date(a.data.added).valueOf(),
 );
 ---
 
@@ -54,7 +52,7 @@ let sortedPosts = tag.sort(
 						sortedPosts.map(
 							({
 								url,
-								frontmatter: { description, slug, title, tags, added: date },
+								data: { description, slug, title, tags, added: date },
 							}) => <Post {url} {description} {date} {slug} {title} {tags} />
 						)
 					}

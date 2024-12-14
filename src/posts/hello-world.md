@@ -1,5 +1,4 @@
 ---
-layout: ../layouts/BlogPost.astro
 title: Hello, world!
 slug: hello-world
 description: >-
