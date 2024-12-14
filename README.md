@@ -23,7 +23,7 @@ Hello, welcome. This is a blog ("blahg" is the proper spelling for Chicagoans) t
 - Edit the images in `public/` (optional)
 - Edit whatever tags you want in `tina/config.js` (optional)
 
-After this, you can add your content to `src/posts` with Markdown files, or with TinaCMS by going to `yoururl.com/admin`!
+After this, you can add your content to `posts/` with Markdown files, or with TinaCMS by going to `yoururl.com/admin`!
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/cassidoo/blahg)
 
@@ -51,4 +51,4 @@ TINASEARCH=<from tina.io>
 
 If you get a remote GraphQL schema error, chances are you need to update TinaCMS, [details here](https://tina.io/docs/introduction/faq#how-do-i-resolve-the-local-graphql-schema-doesnt-match-the-remote-graphql-schema-errors)!
 
-## Have fun!
+**Have fun!**
