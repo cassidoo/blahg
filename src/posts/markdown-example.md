@@ -51,8 +51,6 @@ V franzen umami hammock scenester retro VHS, pop-up truffaut tacos polaroid heir
 
 **bold** _italic_
 **_bold and italic_**
-~~strikethrough~~
-==highlighted text==
 
 ```js
 // This is an example of some React
