@@ -21,7 +21,7 @@ export const GET = () =>
 				title: post.data.title,
 				pubDate: post.data.added,
 				description: post.data.description,
-				content: post.body,
+				content: post.rendered.html,
 				customData: `<updated>${
 					post.data.updated ? post.data.updated : ""
 				}</updated>`,
