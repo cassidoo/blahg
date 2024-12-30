@@ -1,4 +1,4 @@
-Sitemap: https://blahg.netlify.app/sitemap-index.xml
+Sitemap: https://kimjohannesendk.netlify.app/sitemap-index.xml
 
 User-agent: *
 Disallow:
