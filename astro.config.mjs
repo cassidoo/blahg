@@ -3,7 +3,7 @@ import sitemap from "@astrojs/sitemap";
 
 // https://astro.build/config
 export default defineConfig({
-	site: "kimjohannesendk.netlify.app",
+	site: "https://kimjohannesendk.netlify.app",
 	base: "/",
 	integrations: [sitemap()],
 	markdown: {
