@@ -24,4 +24,5 @@ steps:
       description: Describe what has been done to triage this issue
       placeholder: "Example: I started validation on this by..."
   actions:
-    - submit: "Triage"
+    submit: "Create"
+    cancel: "Discard"
