@@ -1,0 +1,22 @@
+trigger: triage
+title: Triage Issue
+description: Explain the status of your triaging this particular issue.
+surfaces:
+  - issue
+steps:
+  - type: dropdown
+    id: status
+    label: Triage Status
+    description: Select the current triage status of this issue
+    options:
+      - label: "🔴 Not Started"
+        value: red
+      - label: "🟡 In Progress"
+        value: yellow
+      - label: "🟢 Complete"
+        value: green
+  - type: textarea
+    id: description
+    label: Triage Notes
+    description: Describe what has been done to triage this issue
+    required: true
