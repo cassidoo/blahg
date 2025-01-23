@@ -2,23 +2,26 @@ trigger: triage
 title: Triage Issue
 description: Explain the status of your triaging this particular issue.
 surfaces:
-  - issue
+- issue
 steps:
-  - form:
-      style: embedded
-      body:
-        - type: dropdown
-          attributes:
-            label: Triage Status
-            description: Select the current triage status of this issue
-            options:
-              - "🔴 Not Started"
-              - "🟡 In Progress"
-              - "🟢 Complete"
-        - type: textarea
-          attributes:
-            label: Triage Notes
-            description: Describe what has been done to triage this issue
-            placeholder: "Example: I started validation on this by..."
-      actions:
-        - submit: "Triage"
+- type: form
+  style: embedded
+  body:
+  - type: dropdown
+    attributes:
+      label: Triage Status
+      description: Select the current triage status of this issue
+      options:
+      - label: 🟢 Complete
+        value: 🟢
+      - label: 🟡 Started
+        value: 🟡
+      - label: 🔴 Not Started
+        value: 🔴
+  - type: textarea
+    attributes:
+      label: Triage Notes
+      description: Describe what has been done to triage this issue
+      placeholder: "Example: I started validation on this by..."
+  actions:
+    - submit: "Triage"
