@@ -1,16 +1,14 @@
 trigger: triage
 title: Triage Issue
-description: Explain the status of your triaging this particular issue.
-surfaces:
-- issue
+description: A template for responding to an issue
 steps:
 - type: form
   style: embedded
   body:
   - type: dropdown
     attributes:
-      label: Triage Status
-      description: Select the current triage status of this issue
+      label: Status
+      description: What is the status of triaging this issue?
       options:
       - label: 🟢 Complete
         value: 🟢
@@ -20,9 +18,9 @@ steps:
         value: 🔴
   - type: textarea
     attributes:
-      label: Triage Notes
-      description: Describe what has been done to triage this issue
-      placeholder: "Example: I started validation on this by..."
+      label: Details
+      description: What work has been completed so far?
+      placeholder: "..."
   actions:
     submit: "Create"
     cancel: "Discard"
