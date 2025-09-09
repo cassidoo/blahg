@@ -10,14 +10,14 @@
 		"astro": "astro"
 	},
 	"devDependencies": {
-		"@astrojs/rss": "^4.0.10",
-		"@astrojs/sitemap": "^3.2.1",
-		"astro": "^5.0.5",
+		"@astrojs/rss": "^4.0.12",
+		"@astrojs/sitemap": "^3.5.1",
+		"astro": "^5.13.6",
 		"prettier": "^3.3.3",
 		"prettier-plugin-astro": "^0.14.1"
 	},
 	"dependencies": {
-		"@tinacms/cli": "^1.7.0",
-		"tinacms": "^2.5.2"
+		"@tinacms/cli": "^1.10.2",
+		"tinacms": "^2.8.2"
 	}
 }
