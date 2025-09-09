@@ -93,8 +93,8 @@ export default defineConfig({
 								label: "Personal",
 							},
 							{
-								value: "musings",
-								label: "Musings",
+								value: "projects",
+								label: "Projects",
 							},
 						],
 					},
