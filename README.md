@@ -16,11 +16,12 @@ Hello, welcome. This is a blog ("blahg" is the proper spelling for Chicagoans) t
 - Make an account at [tina.io](https://tina.io/)
 - Add your TinaCMS keys (see below)
 - Update `astro.config.mjs` with your domain
-- Edit `src/config.js`
+- Edit `src/settings/settings.json` (or update it in Tina, see below)
 - Add your URL in line 1 of `public/robots.txt`
 - Add your links in `src/components/Header.astro`
 - Update the intro in `pages/about.md`
 - Edit the images in `public/` (optional)
+- Edit the RSS styles in `public/` (optional)
 - Edit whatever tags you want in `tina/config.js` (optional)
 
 After this, you can add your content to `posts/` with Markdown files, or with TinaCMS by going to `yoururl.com/admin`!
@@ -50,5 +51,7 @@ TINASEARCH=<from tina.io>
 ```
 
 If you get a remote GraphQL schema error, chances are you need to update TinaCMS, [details here](https://tina.io/docs/introduction/faq#how-do-i-resolve-the-local-graphql-schema-doesnt-match-the-remote-graphql-schema-errors)!
+
+Note: if you want to edit your RSS feed styles (in `public/rss-styles.xsl`), that does _not_ have hot reloading, so you will have to refresh the page with every change. It seems hard-coded, but that's how XSL styles work (you'll see)!
 
 **Have fun!**
