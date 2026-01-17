@@ -1,13 +1,14 @@
 ---
 import HeaderLink from "./HeaderLink.astro";
-import { SITE_TITLE, SITE_DESCRIPTION } from "../config";
+import { title, subtitle } from "../settings/settings.json"
+
 ---
 
 <header>
 	<div class="header-section">
 		<div class="header-frame">
-			<h1>{SITE_TITLE}</h1>
-			<h2>{SITE_DESCRIPTION}</h2>
+			<h1>{title}</h1>
+			<h2>{subtitle}</h2>
 		</div>
 	</div>
 </header>

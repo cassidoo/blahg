@@ -21,6 +21,30 @@ export default defineConfig({
 	schema: {
 		collections: [
 			{
+				label: "Site Settings",
+				name: "settings",
+				path: "src/settings",
+				format: "json",
+				fields: [
+					{
+						type: "string",
+						label: "Site Title",
+						name: "title",
+					},
+					{
+						type: "string",
+						label: "Site subtitle",
+						name: "subtitle",
+					},
+				],
+				ui: {
+					allowedActions: {
+						create: false,
+						delete: false,
+					},
+				},
+			},
+			{
 				name: "post",
 				label: "Posts",
 				path: "posts",

@@ -6,7 +6,7 @@ import Footer from "../components/Footer.astro";
 import Post from "../components/Post.astro";
 import ColorScript from "../components/ColorScript.astro";
 
-import { SITE_TITLE, SITE_DESCRIPTION } from "../config";
+import { title, subtitle } from "../settings/settings.json"
 
 let posts = await getCollection("posts");
 
@@ -19,7 +19,7 @@ posts = posts.sort(
 
 <!doctype html>
 <html lang="en-us">
-	<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	<BaseHead title={title} description={subtitle} />
 	<body>
 		<Header />
 		<main>

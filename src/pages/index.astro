@@ -6,7 +6,7 @@ import Footer from "../components/Footer.astro";
 import HomePosts from "../components/HomePosts.astro";
 import ColorScript from "../components/ColorScript.astro";
 import Tags from "../components/Tags.astro";
-import { SITE_TITLE, SITE_DESCRIPTION } from "../config";
+import { title, subtitle } from "../settings/settings.json"
 import { Content as About } from "./about.md";
 import getTags from "../scripts/getTags";
 
@@ -16,9 +16,9 @@ const tags = getTags(posts);
 
 <!doctype html>
 <html lang="en-us">
-	<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	<BaseHead title={title} description={subtitle} />
 	<body>
-		<Header title={SITE_TITLE} />
+		<Header title={title} />
 		<main>
 			<About />
 
