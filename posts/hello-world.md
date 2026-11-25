@@ -1,11 +1,11 @@
 ---
-title: Hello, world!
+title: "Hello, world!"
 slug: hello-world
-description: >-
-  This is an example blog!
+description: This is an example blog post!
 tags:
   - personal
-added: "May 01 2024"
+  - meta
+added: 2026-05-01T05:00:00.000Z
 ---
 
 This is an example blog post!

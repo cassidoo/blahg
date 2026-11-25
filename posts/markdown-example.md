@@ -1,11 +1,10 @@
 ---
 title: Markdown Example
 slug: markdown
-description: >-
-  Check out how markdown is rendered!
+description: Check out how markdown is rendered!
 tags:
   - technical
-added: "May 09 2024"
+added: 2026-05-09T05:00:00.000Z
 ---
 
 This is an example blog post!
@@ -96,9 +95,13 @@ Just some normal text, wow.
 
 ---
 
+And then, an example table:
+
 | Example table | Example things |
 | ------------- | -------------- |
 | What          | how            |
 | Why           | when           |
+
+---
 
 Okay, that's it! Good luck! Write more! Follow your dreams!
